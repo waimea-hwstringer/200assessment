@@ -6,12 +6,14 @@ This project is a website for my sister to help her with her cake business.
 
 ## Features
 - Allows users to browse cakes
-- Allows users to purchase cakes
+- Allows users to place orders for cakes
+- Showcases a portfolio of my sister's previous cakes
+- Has an admin interface for my sister to view pending orders 
+- Provides my sister's contact details if they need to get in touch
 
 ## System Design & Testing
-All of the initial design for the system can be found [here](Design.md).
-
-All of the features and further design revisions can be found [here](Testing.md).
+- [Design & Review](Design.md)
+- [Development & Testing](Development.md)
 
 ## Project mascot
 ![coverImage](images/hardimage.png)
