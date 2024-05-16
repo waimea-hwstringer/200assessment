@@ -13,9 +13,11 @@ Assessment Standards: **91892** and **91893**
 
 ### 16/05/24
 
-Replace this test with what you are working on
+Database structure
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Today I made the structure for the database for the website. There will be a database with admin login credentials, a list of themes for the cake that will help them be organized on the site, and the booking details.
+
+![DB plan using drawSQL](images/dbPlan1.png)
 
 ### DATE HERE
 
