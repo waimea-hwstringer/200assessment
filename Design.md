@@ -68,7 +68,23 @@ The social implication is how the website affects the user personally.
 
 This implication is relevant to my project because the website must have a positive social impact on the users. This can be by using friendly language and being inclusive to all users.
 
-I will need to make sure that the website fulfills all of the social needs for a user by being
+I will need to make sure that the website fulfills all of the social needs for a user by using clear language that should not be able to be interpreted as controversial.
+
+-------------------------------------------------
+
+## User Experience
+
+### USEFUL
+
+It is important for users to find the website useful. This is because I am making this website to streamline the process of gathering and organizing orders for my sister's cake company. If the website is not efficient and useful for her to use then she will not use it.
+
+### USABLE
+
+It is important for users to find the website usable. The website must be easy to use because the clientel may have little to no experience using websites. It must be clear, concise and easy to navigate.
+
+### DESIRABLE
+
+It is important for users to find the website desirable. If the website does not look aesthetically and is not nice to use users will not want to use the website again.
 
 -------------------------------------------------
 
