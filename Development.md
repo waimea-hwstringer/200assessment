@@ -17,14 +17,21 @@ Database structure
 
 Today I made the structure for the database for the website. There will be a database with admin login credentials, a list of themes for the cake that will help them be organized on the site, and the booking details.
 
-![DB plan using drawSQL](images/dbPlan1.png)
+![DB plan using drawSQL (v1) ](images/dbPlan1.png)
 
-### DATE HERE
+### 20/05/2024
 
-Replace this test with what you are working on
+Improved database and made a flow chart
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Today I added another database that will store exemplar images and descriptions about previous cakes my sister has baked.
+![DB plan using drawSQL (v2) ](images/dbPlan2.png)
 
+Next I made a flowchart to draft how the end users will navigate through the site.
+
+![Flowchart using excalidraw](images/flowchartPlan1.png)
+
+I showed this flowchart to my client (my sister)
+>yep thats great
 ### DATE HERE
 
 Replace this test with what you are working on
