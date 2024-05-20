@@ -31,12 +31,14 @@ Next I made a flowchart to draft how the end users will navigate through the sit
 ![Flowchart using excalidraw](images/flowchartPlan1.png)
 
 I showed this flowchart to my client (my sister)
->yep thats great
-### DATE HERE
 
-Replace this test with what you are working on
+>That looks like it will work fine.
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+### 21/05/2024
+
+Today I made some drafts in Figma
+
+![Figma 1](images/figma1.png)
 
 ### DATE HERE
 
