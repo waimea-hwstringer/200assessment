@@ -40,11 +40,11 @@ Today I made some drafts in Figma
 
 ![Figma 1](images/figma1.png)
 
-### DATE HERE
+### 23/05/2024
 
-Replace this test with what you are working on
+Carried on with figma
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+![Alt text](images/figma2.png)
 
 ### DATE HERE
 
