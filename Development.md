@@ -36,21 +36,22 @@ I showed this flowchart to my client (my sister)
 
 ### 21/05/2024
 
-Today I made some drafts in Figma
+Today I made some drafts in Figma. These designs are pretty loose and are not perfectly to scale with any phone screen, so this will need to be changed.
 
 ![Figma 1](images/figma1.png)
 
 ### 23/05/2024
 
-Carried on with figma
+Today I continued to work on the loose diagrams.example pages with figma. This time the screen proportions and resolution are consistent with that of an iPhone 13/14. I will show these to my client on Saturday to see whether or not they are going to work for her, and what I should tweak.
 
 ![Alt text](images/figma2.png)
 
-### DATE HERE
+### 25/05/2024
 
-Replace this test with what you are working on
+Today I discussed my ideas with my client.
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+She didn't like xyz
+>Quote blah blah blah.
 
 ### DATE HERE
 
