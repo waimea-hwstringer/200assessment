@@ -50,8 +50,17 @@ Today I continued to work on the loose diagrams.example pages with figma. This t
 
 Today I discussed my ideas with my client.
 
-She didn't like xyz
->Quote blah blah blah.
+She didn't like the idea of having any pictures of herself in the about page.
+>"[The picture of her] It's shit!"
+>"If someone requests something to extravagant and I don't have the skillset or the timeframe then there must be a way to reject it."
+>"I need to see if there is a time limit."
+>"Needs to specify their address or would need to pay for delivery or come pick it up."
+>"It needs to specify that it's in the Nelson area."
+
+I need to add more in depth size options (i.e. add dimensions of the cake tins) and add a shape option.
+There also must be a way to delete themes as well as add them.
+
+The option for the landing page that she preferred the most is Landing Page 4.
 
 ### DATE HERE
 
