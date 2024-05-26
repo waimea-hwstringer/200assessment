@@ -62,6 +62,35 @@ There also must be a way to delete themes as well as add them.
 
 The option for the landing page that she preferred the most is Landing Page 4.
 
+### 25/05/2024
+
+Today I implemented the feedback that I got from my client.
+
+- On the about section it will have the location of the business
+- About section will not have a picture of her 
+- There will be a new column on the bookings db for date and time (The date that the order is due by)
+- Added a new column for address
+- Options to delete an example or theme
+- On the pricing section there will be a delivery fee stated (delivery only available in Nelson region)
+
+Flowchart MK 2. Now with time, date & pickup on bookings.
+![Flowchart MK 2. Now with time, date & pickup on bookings.](images/flowchartPlan2.png)
+
+DB Plan MK 3. Now with delete options for example & theme.
+![DB Plan MK 3. Now with delete options for example & theme.](images/dbPlan3.png)
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
 ### DATE HERE
 
 Replace this test with what you are working on
