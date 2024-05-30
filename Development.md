@@ -79,11 +79,16 @@ Flowchart MK 2. Now with time, date & pickup on bookings.
 DB Plan MK 3. Now with delete options for example & theme.
 ![DB Plan MK 3. Now with delete options for example & theme.](images/dbPlan3.png)
 
-### DATE HERE
+### 30/05/2024
 
-Replace this test with what you are working on
+Today I was working on the wireframe in Figma
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+![figma3](images/figma3.png)
+I edited the landing page to include the examples at the bottom in categorized groups rather tham have them be directly under the header. I think that this makes the site more concise and easily navigable. I will need to discuss this change with my client as they stated that they liked the landing page. I also added the edit themes page and edit examples page.
+
+Later, I added colour to the wireframe. The colour palette that I used was automatically generated from Realtime Colors. I am not sure what my client wants colour scheme wise, so this will more than likely completely change in the future.
+
+![figma3colour](images/figma3colour.png)
 
 ### DATE HERE
 
