@@ -13,7 +13,7 @@ Assessment Standards: **91892** and **91893**
 
 ### Identified Need or Problem
 
-My sister madison owns a cake business where clients request a certain type of cake and she will make it for them. Her business has grown to the point where keeping track of all of her orders is difficult and the process of ordering cakes needs to be streamlined.
+My sister Madison owns a cake business where clients request a certain type of cake and she will make it for them. Her business has grown to the point where keeping track of all of her orders is difficult and the process of ordering cakes needs to be streamlined.
 
 ### End-User Requirements
 
@@ -23,7 +23,7 @@ The level of IT knowledge that users may have will vary greatly. This means that
 
 ### Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+To help my sister deal with the growing size & capabilities of her cake business, I will produce a website that allows customers to place a custom order for a cake, and allows my sister to view an organised list of the orders that have been placed.
 
 
 -------------------------------------------------
