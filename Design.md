@@ -36,7 +36,11 @@ The usability implication entails how easy it is to use a website.
 
 This implication is relevant to my project because there will be a wide range of different people using my website who will have varying IT skills.
 
-When designing the user interface for my website I will use Nielson's heuristics to ensure that my website is easy and intuitive to use. The UI should be clear and consistent through out the whole site with contrasting colours to make it easy to see. To verify this I will test my website with a range of users and observe how easy it is for them to use.
+When designing the user interface for my website I will use Nielson's heuristics to ensure that my website is easy and intuitive to use. 
+
++ADD EXAMPLES FOR FUTURE
+
+The UI should be clear and consistent through out the whole site with contrasting colours to make it easy to see. To verify this I will test my website with a range of users and observe how easy it is for them to use.
 
 ### FUNCTIONALITY
 
