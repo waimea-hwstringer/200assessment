@@ -42,7 +42,7 @@ Today I made some drafts in Figma. These designs are pretty loose and are not pe
 
 ### 23/05/2024
 
-Today I continued to work on the loose diagrams.example pages with figma. This time the screen proportions and resolution are consistent with that of an iPhone 13/14. I will show these to my client on Saturday to see whether or not they are going to work for her, and what I should tweak.
+Today I continued to work on the loose diagram example pages with figma. This time the screen proportions and resolution are consistent with that of an iPhone 13/14. I will show these to my client on Saturday to see whether or not they are going to work for her, and what I should tweak.
 
 ![Alt text](images/figma2.png)
 
@@ -52,7 +52,7 @@ Today I discussed my ideas with my client.
 
 She didn't like the idea of having any pictures of herself in the about page.
 > - "[The picture of her] It's shit!"
-> - "If someone requests something to extravagant and I don't have the skillset or the timeframe then there must be a way to reject it."
+> - "If someone requests something too extravagant and I don't have the skillset or the timeframe then there must be a way to reject it."
 > - "I need to see if there is a time limit."
 > - "Needs to specify their address or would need to pay for delivery or come pick it up."
 > - "It needs to specify that it's in the Nelson area."
@@ -73,8 +73,8 @@ Today I implemented the feedback that I got from my client.
 - Options to delete an example or theme
 - On the pricing section there will be a delivery fee stated (delivery only available in Nelson region)
 
-Flowchart MK 2. Now with time, date & pickup on bookings.
-![Flowchart MK 2. Now with time, date & pickup on bookings.](images/flowchartPlan2.png)
+Flowchart MK 2. Now with time, date & address on bookings.
+![Flowchart MK 2. Now with time, date & address on bookings.](images/flowchartPlan2.png)
 
 DB Plan MK 3. Now with delete options for example & theme.
 ![DB Plan MK 3. Now with delete options for example & theme.](images/dbPlan3.png)

@@ -25,6 +25,19 @@ The level of IT knowledge that users may have will vary greatly. This means that
 
 To help my sister deal with the growing size & capabilities of her cake business, I will produce a website that allows customers to place a custom order for a cake, and allows my sister to view an organised list of the orders that have been placed.
 
+On my website the customers should be able to:
+- place an order for a cake
+- view past examples of cakes (ordered by theme)
+- contact my sister 
+
+On my website my sister should be able to:
+- view a list of orders that have been placed
+- edit the example images
+
+Additionally the website should be
+- easy to use
+- enjoyable to use
+- aesthetically pleasing
 
 -------------------------------------------------
 
@@ -36,11 +49,7 @@ The usability implication entails how easy it is to use a website.
 
 This implication is relevant to my project because there will be a wide range of different people using my website who will have varying IT skills.
 
-When designing the user interface for my website I will use Nielson's heuristics to ensure that my website is easy and intuitive to use. 
-
-+ADD EXAMPLES FOR FUTURE
-
-The UI should be clear and consistent through out the whole site with contrasting colours to make it easy to see. To verify this I will test my website with a range of users and observe how easy it is for them to use.
+When designing the user interface for my website I will use Nielson's usability heuristics to ensure that my website is easy and intuitive to use. I will need to keep in mind visibility of system status, one of Nielsons' heuristics. This means alerting the user when something is wrong, such as adding an error screen. Another heuristic I will need to consider is consistency and standards. The UI should be clear and consistent through out the whole site with different colours to make it easy to see. A third heuristic to keep in mind is recognition rather than recall. This essentially means using well known icons & symbols to make using the website easy for the end user. To verify all of this I will test my website with a range of users and observe how easy it is for them to use.
 
 ### FUNCTIONALITY
 
