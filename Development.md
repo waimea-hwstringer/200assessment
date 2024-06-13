@@ -1,6 +1,6 @@
 # Development of a Database-Linked Website for NCEA Level 2
 
-Project Name: **Mad as Cakes**
+Project Name: **Cake shop website**
 
 Project Author: **Harry Stringer**
 
@@ -124,6 +124,30 @@ I asked her what kind of font she would like to use. She said that the font used
 https://fonts.google.com/specimen/Inter
 
 She has given me the go ahead to start developing the actual website as she is happy with the deign.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
 
 ### DATE HERE
 
