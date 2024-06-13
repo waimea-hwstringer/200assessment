@@ -111,11 +111,19 @@ I Changed the colours to be more neutral & blue as she requested
 Below is the link to the realtime colour website i used to generate the colours.
 - https://www.realtimecolors.com/?colors=1d111a-f7f2f6-45babf-D9D9D9-87c5c8&fonts=Inter-Inter
 
-### DATE HERE
+### 13/06/2024
 
-Replace this test with what you are working on
+Got feedback from client
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Yesterday I had a chat with my client to see whether or not she liked the new colours that I had implemented.
+
+>"That looks way better. I think that sould work for what I want."
+
+I asked her what kind of font she would like to use. She said that the font used in the mockups was good, so I'll just use it as it is available on google fonts. It is called inter.
+
+https://fonts.google.com/specimen/Inter
+
+She has given me the go ahead to start developing the actual website as she is happy with the deign.
 
 ### DATE HERE
 
