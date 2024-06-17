@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.classless.min.css"
     />
 </head>
 <body>
 <header>
-    <h1><?= SITE_NAME ?></h1>
+    <h1 id="image"><?= SITE_LOGO ?></h1>
     <nav>
         <a href='index.php'>Order</a>
         <a href='game.php'>Admin</a>
