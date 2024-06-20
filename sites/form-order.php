@@ -16,7 +16,25 @@ include 'partials/top.php';
     <label>Phone</label>
     <input name="phone">
 
-    <input type="submit" value="Add">
+    <label>Size</label>
+    <input name="size">
+
+    <label>Flavour</label>
+    <input name="flavour">
+
+    <label>Description of what you'd like</label>
+    <input name="note">
+
+    <label>Theme</label>
+    <input name="theme">
+
+    <label>Date & Time</label>
+    <input name="datetime">
+
+    <label>Address</label>
+    <input name="address">
+
+    <input type="submit" value="submit">
 
 </form>
 

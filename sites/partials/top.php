@@ -17,8 +17,9 @@
 <header>
     <h1 id="image"><?= SITE_LOGO ?></h1>
     <nav>
-        <a href='index.php'>Order</a>
-        <a href='game.php'>Admin</a>
+        <a href='index.php'>Home</a>
+        <a href='form-order.php'>Order</a>
+        <a href='form-admin.php'>Admin</a>
     </nav>
 </header>
 <main>
