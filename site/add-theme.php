@@ -32,6 +32,6 @@ catch (PDOException $e) {
     die('There was an error sending data to the database');
 }
 
-header('location: index-admin.php')
+header('location: form-theme.php')
 ?>
 

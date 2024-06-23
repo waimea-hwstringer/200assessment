@@ -8,33 +8,33 @@ include 'partials/top.php';
 <form method="post" action="add-order.php"> 
 
     <label>Full Name</label>
-    <input name="name">
+    <input name="name" type="text" required>
 
     <label>Email</label>
-    <input name="email" type="text">
+    <input name="email" type="email" required>
 
     <label>Phone</label>
-    <input name="phone">
+    <input name="phone" type="number" required>
 
     <label>Size</label>
-    <input name="size">
+    <input name="size" required>
 
     <label>Flavour</label>
-    <input name="flavour">
+    <input name="flavour" required>
 
     <label>Description of what you'd like</label>
-    <input name="note">
+    <input name="note" type="text" required>
 
     <label>Theme</label>
-    <input name="theme">
+    <input name="theme" required>
 
     <label>Date & Time</label>
-    <input name="datetime">
+    <input name="datetime" type="datetime-local" required>
 
     <label>Address</label>
-    <input name="address">
+    <input name="address" type="text" required>
 
-    <input type="submit" value="submit">
+    <input type="submit" value="submit" required>
 
 </form>
 

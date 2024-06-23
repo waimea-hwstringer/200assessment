@@ -77,9 +77,9 @@ foreach ($themes as $theme) {
 echo '</section>';
 
 echo '<section id="adminButtons">';
-    echo '<a href="form-theme.php">Add Theme</a>';
+    echo '<a href="form-theme.php">Edit Themes</a>';
     echo '<br>';
-    echo '<a href="form-example.php">Add Example</a>';
+    echo '<a href="form-example.php">Edit Examples</a>';
 echo '</section>';
 
 include 'partials/bottom.php'; 
