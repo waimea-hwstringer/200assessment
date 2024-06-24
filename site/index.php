@@ -6,10 +6,10 @@ include 'partials/top.php';
 $db = connectToDB();
 consoleLog($db);
 
+//************************************************************************************** */
+
 //Setup a query to get all company info
 $query = 'SELECT * FROM examples';
-
-//************************************************************************************** */
 
 //Attempt to run the query
 try {

@@ -1,6 +1,50 @@
 <?php 
 require '_functions.php';
 include 'partials/top.php'; 
+
+$db = connectToDB();
+consoleLog($db);
+
+//This is the query for finding the options in the size enum
+$query = 'SHOW COLUMNS FROM bookings LIKE "size"';
+try {
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $column = $stmt->fetch();
+
+}
+catch (PDOException $e) {
+    consoleLog($e->getMessage(),'DB List Fetch', ERROR);
+    die('There was an error getting data from the database');
+}
+
+
+//This removes the apostrophe from the array items
+preg_match('/enum\((.*)\)$/', $column['Type'], $matches);
+$matches = str_replace('\'','',$matches[1]);
+$sizes = explode(',', $matches);
+
+//************************************************************* */
+
+//Setup a query to get all company info
+$query = 'SELECT * FROM themes';
+
+//Attempt to run the query
+try {
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $themes = $stmt->fetchAll();
+
+}
+
+catch (PDOException $e) {
+    consoleLog($e->getMessage(),'DB List Fetch', ERROR);
+    die('There was an error getting data from the database');
+}
+
+//See what we got back
+consoleLog($themes);
+
 ?>
 
 <h1>Place an order</h1>
@@ -17,16 +61,34 @@ include 'partials/top.php';
     <input name="phone" type="number" required>
 
     <label>Size</label>
-    <input name="size" required>
+    <select name="size" required>
+    <?php 
+            foreach ($sizes as $size) {
+                echo '<option value="'.$size.'">'.$size.'</option>';
+            }
+        ?>
+    </select>
 
     <label>Flavour</label>
-    <input name="flavour" required>
+    <select name="flavour" required>
+        <?php 
+            foreach ($bookings as $booking) {
+                echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+            }
+        ?>
+    </select>
 
     <label>Description of what you'd like</label>
     <input name="note" type="text" required>
 
     <label>Theme</label>
-    <input name="theme" required>
+    <select name="theme" required>
+        <?php 
+            foreach ($themes as $theme) {
+                echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+            }
+        ?>
+    </select>
 
     <label>Date & Time</label>
     <input name="datetime" type="datetime-local" required>

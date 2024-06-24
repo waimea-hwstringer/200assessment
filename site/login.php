@@ -36,7 +36,7 @@ if ($username == $admin['username'] && $password == $admin['password']) {
 }
 
 else {
-    echo 'Incorrect Username or Password. Click <a href="management-signin.php">here</a> to try again.';
+    echo 'Incorrect Username or Password';
 }
 
 include 'partials/bottom.php';
