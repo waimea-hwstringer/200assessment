@@ -54,7 +54,8 @@ foreach ($themes as $theme) {
     echo '<table>';
     echo    '<tr>';
     echo        '<th>Name</th>';
-    echo        '<th>Email</th>';
+    echo        '<th>Date & Time</th>';
+    echo        '<th>More info</th>';
     echo    '</tr>';
     
     echo '<h3>' . $theme['theme'] . ' cakes </h3>';
@@ -65,7 +66,8 @@ foreach ($themes as $theme) {
         if ($booking['theme'] == $theme['id']) {
             echo '<tr>';
             echo     '<td>' . $booking['name']  . '</td>';
-            echo     '<td>' . $booking['email']  . '</td>';
+            echo     '<td>' . $booking['datetime']  . '</td>';
+            echo     '<td><a href="order.php?id='.$booking['id'].'">🔗</a></td>';
             echo '</tr>';
 
         }

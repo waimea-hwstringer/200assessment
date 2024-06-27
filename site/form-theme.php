@@ -1,7 +1,18 @@
 <?php 
 require '_functions.php';
-include 'partials/top.php'; 
+include 'partials/topMIN.php'; 
+?>
 
+<body>
+<header>
+    <h1 id="image"><?= SITE_LOGO ?></h1>
+    <nav>
+        <a href='index-admin.php'>Back</a>
+    </nav>
+</header>
+<main>
+
+<?php
 
 $db = connectToDB();
 consoleLog($db);

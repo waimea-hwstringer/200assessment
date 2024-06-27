@@ -125,11 +125,14 @@ https://fonts.google.com/specimen/Inter
 
 She has given me the go ahead to start developing the actual website as she is happy with the deign.
 
-### DATE HERE
+### 27/06/2024
 
-Replace this test with what you are working on
+I have been developing the site.
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+After developing the site I have found a problem with my UI design that will need to be chanegd.
+![Admin page that is skewed](images/DEVadmin.png)
+Clearly this table looks very messy and will not fit nicely on a mobile device. Instead of displaying all of the order information in one giant table I have decided to have each order be on their own page. The table will display the name and the time, and then have a link to the page that has all of the more detailed order information.
+
 
 ### DATE HERE
 

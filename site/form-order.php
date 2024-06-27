@@ -45,6 +45,27 @@ catch (PDOException $e) {
 //See what we got back
 consoleLog($themes);
 
+//************************************************************* */
+
+//This is the query for finding the options in the flavour enum
+$query = 'SHOW COLUMNS FROM bookings LIKE "flavour"';
+try {
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $column = $stmt->fetch();
+
+}
+catch (PDOException $e) {
+    consoleLog($e->getMessage(),'DB List Fetch', ERROR);
+    die('There was an error getting data from the database');
+}
+
+
+//This removes the apostrophe from the array items
+preg_match('/enum\((.*)\)$/', $column['Type'], $matches);
+$matches = str_replace('\'','',$matches[1]);
+$flavours = explode(',', $matches);
+
 ?>
 
 <h1>Place an order</h1>
@@ -62,7 +83,7 @@ consoleLog($themes);
 
     <label>Size</label>
     <select name="size" required>
-    <?php 
+        <?php 
             foreach ($sizes as $size) {
                 echo '<option value="'.$size.'">'.$size.'</option>';
             }
@@ -72,8 +93,8 @@ consoleLog($themes);
     <label>Flavour</label>
     <select name="flavour" required>
         <?php 
-            foreach ($bookings as $booking) {
-                echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+            foreach ($flavours as $flavour) {
+                echo '<option value="'.$flavour.'">'.$flavour.'</option>';
             }
         ?>
     </select>
