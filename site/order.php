@@ -1,18 +1,7 @@
 <?php
 require '_functions.php';
 include 'partials/topMIN.php';
-?>
 
-<body>
-<header>
-    <h1 id="image"><?= SITE_LOGO ?></h1>
-    <nav>
-        <a href='index-admin.php'>Back</a>
-    </nav>
-</header>
-<main>
-
-<?php
 $orderID = $_GET['id'] ?? '';
 // SQL wen need to get the order info...
 // SELECT * FROM boookings WHERE id = XXX
@@ -27,22 +16,23 @@ consoleLog($db);
 //Setup a query to get all company info
 $query = 'SELECT themes.theme AS themeNAME,
                  bookings.name,
+                 bookings.id,
                  bookings.email,
                  bookings.phone,
                  bookings.size,
                  bookings.flavour,
                  bookings.note,
-                 bookings.theme,
                  bookings.datetime,
                  bookings.address
           FROM bookings
-          JOIN themes ON themes.id = bookings.theme';
+          JOIN themes ON themes.id = bookings.theme
+          WHERE bookings.id = ?';
 
 //Attempt to run the query
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute();
-    $themes = $stmt->fetchAll();
+    $stmt->execute([$orderID]);
+    $booking = $stmt->fetch();
 
 }
 
@@ -51,61 +41,47 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-if ($themes == false) die("There was an error");
-
-consoleLog($themes);
-
-foreach($bookings as $booking) {
-echo $booking["themeNAME"];
-}
-//********************************************************************************************************************************************* */
-
-//Setup a query to get all company info
-$query = 'SELECT * FROM bookings WHERE id = ?';
-
-//Attempt to run the query
-try {
-    $stmt = $db->prepare($query);
-    $stmt->execute([$orderID]);
-    $booking = $stmt->fetch(); //There will only be one result
-
-}
-
-catch (PDOException $e) {
-    consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('There was an error getting the booking from the database');
-}
-
 if ($booking == false) die("Unknown booking id :".$orderID." Please try again or contact site administrator.");
 
+consoleLog($booking);
+
+
 //********************************************************************************************************************************************* */
 
-echo '<div><h3>Name</h3>';
-echo '<p>'.$booking['name'].'<p></div>';
+echo '<table>';
 
-echo '<div><h3>Email</h3>';
-echo '<p>'.$booking['email'].'<p></div>';
+echo '<tr><th>Name</th>';
+echo '<td>'.$booking['name'].'</td></tr>';
 
-echo '<div><h3>Phone</h3>';
-echo '<p>'.$booking['phone'].'<p></div>';
+echo '<tr><th>Email</th>';
+echo '<td>'.$booking['email'].'</td></tr>';
 
-echo '<div><h3>Size</h3>';
-echo '<p>'.$booking['size'].'<p></div>';
+echo '<tr><th>Phone</th>';
+echo '<td>'.$booking['phone'].'</td></tr>';
 
-echo '<div><h3>Flavour</h3>';
-echo '<p>'.$booking['flavour'].'<p></div>';
+echo '<tr><th>Size</th>';
+echo '<td>'.$booking['size'].'</td></tr>';
 
-echo '<div><h3>Description</h3>';
-echo '<p>'.$booking['note'].'<p></div>';
+echo '<tr><th>Flavour</th>';
+echo '<td>'.$booking['flavour'].'</td></tr>';
 
-echo '<div><h3>Theme</h3>';
-echo '<p>'.$booking['themeNAME'].'<p></div>';
+echo '<tr><th>Description</th>';
+echo '<td>'.$booking['note'].'</td></tr>';
 
-echo '<div><h3>Date & Time</h3>';
-echo '<p>'.$booking['datetime'].'<p></div>';
+echo '<tr><th>Theme</th>';
+echo '<td>'.$booking['themeNAME'].'</td></tr>';
 
-echo '<div><h3>Address</h3>';
-echo '<p>'.$booking['address'].'<p></div>';
+echo '<tr><th>Date & Time</th>';
+echo '<td>'.$booking['datetime'].'</td></tr>';
+
+echo '<tr><th>Address</th>';
+echo '<td>'.$booking['address'].'</td></tr>';
+
+echo '</table>';
+
+echo '<a href="delete-order.php?id='.$booking['id'].'">';
+echo 'Delete order';
+echo '</a>';
 
 include 'partials/bottom.php';
 ?>

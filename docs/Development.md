@@ -134,11 +134,11 @@ After developing the site I have found a problem with my UI design that will nee
 Clearly this table looks very messy and will not fit nicely on a mobile device. Instead of displaying all of the order information in one giant table I have decided to have each order be on their own page. The table will display the name and the time, and then have a link to the page that has all of the more detailed order information.
 
 
-### DATE HERE
+### 01/07/2024
 
-Replace this test with what you are working on
+Added a delete order function
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Today I added a feature that allows orders to be deleted by the admin. This was really always needed but I just forgot about it when designing the site. I will need to inform my client of this change but I am sure that it will be okay.
 
 ### DATE HERE
 
