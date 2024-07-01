@@ -11,6 +11,7 @@ consoleLog($db);
 //Setup a query to get all company info
 $query = 'SELECT * FROM examples';
 
+
 //Attempt to run the query
 try {
     $stmt = $db->prepare($query);
@@ -88,4 +89,21 @@ consoleLog($themes);
         }
     ?>
 </section>
-<?php include 'partials/bottom.php'; ?>
+
+<?php 
+
+foreach($examples as $example) {
+    echo '<article>';
+
+    echo   '<h3>' . $example['name'] . '</h3>';
+    echo   '<p>' . $example['description'] . '</p>';
+    
+    // NOTE: Load the image as a separate HTTP request
+    echo   '<img src="load-image.php?id=' . $example['id'] . '">';
+
+    echo '</article>';
+}
+
+
+
+include 'partials/bottom.php'; ?>

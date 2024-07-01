@@ -1,11 +1,7 @@
 
 <?php 
 require '_functions.php';
-?>
-
-<h1>Add Order</h1>
-
-<?php
+include 'partials/top.php';
 
 consoleLog($_POST, 'POST Data');
 
@@ -35,7 +31,7 @@ try {
 
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('There was an error sending data to the database');
+    die('<h2>There was an error sending data to the database. Please check that all of your selections were valid.<h2>');
 }
 
 header('location: index.php')

@@ -1,5 +1,6 @@
 <?php
 require '_functions.php';
+include 'partials/topMIN.php';
 
 $taskID = $_GET['id'] ?? '';
 // SQL wen need to get the task info...

@@ -1,11 +1,7 @@
 
 <?php 
 require '_functions.php';
-?>
-
-<h1>Add Order</h1>
-
-<?php
+include 'partials/top.php';
 
 consoleLog($_POST, 'POST Data');
 
