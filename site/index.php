@@ -61,11 +61,11 @@ consoleLog($themes);
 <section id="info">
     <div class="paragraph">
         <h3>About</h3>
-        <p>asdfsl</p>
+        <p>lorem ipsum</p>
     </div>
     <div class="paragraph">
         <h3>Pricing</h3>
-        <p>asdfsl</p>
+        <p>$$$$$$$$$</p>
     </div>
 </section>
 
@@ -80,9 +80,10 @@ consoleLog($themes);
 
             foreach($examples as $example) {
                 if ($example['theme'] == $theme['id']) {
-                    echo '<li>';
-                    echo $example['name'];
-                    echo '</li>';
+                    echo '<article>';
+                    echo   '<h3>' . $example['name'] . '</h3>';
+                    echo   '<img src="load-image.php?id=' . $example['id'] . '">';
+                    echo '</article>';
                 }
     
             }
@@ -91,19 +92,4 @@ consoleLog($themes);
 </section>
 
 <?php 
-
-foreach($examples as $example) {
-    echo '<article>';
-
-    echo   '<h3>' . $example['name'] . '</h3>';
-    echo   '<p>' . $example['description'] . '</p>';
-    
-    // NOTE: Load the image as a separate HTTP request
-    echo   '<img src="load-image.php?id=' . $example['id'] . '">';
-
-    echo '</article>';
-}
-
-
-
 include 'partials/bottom.php'; ?>

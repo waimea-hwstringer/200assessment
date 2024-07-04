@@ -4,3 +4,16 @@
     max-height: 128px;
 }
 
+img {
+    max-width: 256px;
+    max-height: 256px;
+}
+
+article {
+    max-width: fit-content;
+}
+
+.examples {
+    display: flex;
+    gap: 1rem;
+}
