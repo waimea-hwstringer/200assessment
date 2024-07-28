@@ -123,16 +123,18 @@ I asked her what kind of font she would like to use. She said that the font used
 
 https://fonts.google.com/specimen/Inter
 
-She has given me the go ahead to start developing the actual website as she is happy with the deign.
+She has given me the go ahead to start developing the actual website as she is happy with the design.
 
 ### 27/06/2024
 
 I have been developing the site.
 
-After developing the site I have found a problem with my UI design that will need to be chanegd.
+After developing the site I have found a problem with my UI design that will need to be changed.
 ![Admin page that is skewed](images/DEVadmin.png)
 Clearly this table looks very messy and will not fit nicely on a mobile device. Instead of displaying all of the order information in one giant table I have decided to have each order be on their own page. The table will display the name and the time, and then have a link to the page that has all of the more detailed order information.
 
+Here is the final result after I made the changes stated above:
+![Admin page that is neat](images/DEVadmin2.png)
 
 ### 01/07/2024
 
@@ -140,11 +142,23 @@ Added a delete order function
 
 Today I added a feature that allows orders to be deleted by the admin. This was really always needed but I just forgot about it when designing the site. I will need to inform my client of this change but I am sure that it will be okay.
 
-### DATE HERE
+### 28/07/2024
 
-Replace this test with what you are working on
+Today I had a meeting with my client to discuss how the development is going
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Almost all of the actual functionality is finished, there were just some things that I needed to go over with my client. 
+
+I showed her the delete order function 
+>"Yeah, I didn't think about that but you definitely need it. Looks good."
+I queried her about how the examples portion of the home page is looking because it looks a bit bad.
+>"It looked good on the simple mockup but with the real images I think it looks bad. I don't like how it has the big border and title around the images. It would be better to just have the pictures without any of the description or title cluttering it."
+Before the implementing the change:
+
+![Image with title](image.png)
+
+After (Not super different but cleaner):
+
+![image without title](images/DEVexample-no-title.png)
 
 ### DATE HERE
 

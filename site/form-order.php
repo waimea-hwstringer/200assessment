@@ -79,7 +79,7 @@ $flavours = explode(',', $matches);
     <input name="email" type="email" required>
 
     <label>Phone</label>
-    <input name="phone" type="number" required>
+    <input name="phone" type="text" required>
 
     <label>Size</label>
     <select name="size" required>
@@ -111,8 +111,8 @@ $flavours = explode(',', $matches);
         ?>
     </select>
 
-    <label>Date & Time</label>
-    <input name="datetime" type="datetime-local" required>
+    <label>Date & Time needed by</label>
+    <input name="datetime" type="datetime-local" min="<?= date('Y-m-d') ?>" required>
 
     <label>Address</label>
     <input name="address" type="text" required>

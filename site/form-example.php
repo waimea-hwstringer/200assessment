@@ -29,7 +29,12 @@ consoleLog($themes);
 //********************************************************************************** */
 
 //Setup a query to get all theme info
-$query = 'SELECT * FROM examples';
+$query = 'SELECT examples.id AS eid,
+                 examples.name AS ename,
+                 examples.description AS edesc,
+                 themes.theme AS tname
+          FROM examples
+          JOIN themes ON examples.theme = themes.id';
 
 //Attempt to run the query
 try {
@@ -52,7 +57,7 @@ consoleLog($examples);
 
 <h1>Add an example</h1>
 
-<form method="post" action="add-example.php"> 
+<form method="post" action="add-example.php" enctype="multipart/form-data"> 
 
     <label>Name</label>
     <input name="name">
@@ -69,6 +74,9 @@ consoleLog($examples);
         ?>
     </select>
 
+    <label>Choose file</label>
+    <input type="file" name="image" accept="image/*" required>
+
     <input type="submit" value="submit">
 
 </form>
@@ -80,10 +88,12 @@ consoleLog($examples);
     foreach($examples as $example) {
         
         echo '<article>';
-            echo '<h3>'.$example['name'].'</h3>';
-            echo   '<img src="load-image.php?id=' . $example['id'] . '">';
+            echo '<h3>'.$example['ename'].'</h3>';
+            echo '<p>'.$example['tname'].'</p>';
+            echo '<p>'.$example['edesc'].'</p>';
+            echo   '<img src="load-image.php?id=' . $example['eid'] . '">';
             echo '<br>';
-            echo '<a href="delete-example.php?id='.$example['id'].'">';
+            echo '<a href="delete-example.php?id='.$example['eid'].'">';
             echo '🗑';
             echo '</a>';
         echo '</article>';
