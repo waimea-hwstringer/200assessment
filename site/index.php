@@ -54,7 +54,7 @@ consoleLog($themes);
 <section id="info">
     <div class="paragraph">
         <h3>About</h3>
-        <p>lorem ipsum</p>
+        <p>Welcome to <?=SITE_NAME?>, a premier destination for exquisite, handcrafted cakes in Nelson, New Zealand. We specialize in creating custom cakes for all occasions, from birthdays and weddings to corporate events. Our commitment to using high-quality ingredients and attention to detail ensures that each cake is not only visually stunning but also delicious. With a variety of flavors and designs to choose from, we work closely with our clients to bring their vision to life. Contact us today to discuss your requirements and let us help make your event truly special with a cake from <?=SITE_NAME?>.</p>
     </div>
     <div class="paragraph">
         <h3>Pricing</h3>

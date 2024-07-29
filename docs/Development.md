@@ -150,8 +150,11 @@ Almost all of the actual functionality is finished, there were just some things 
 
 I showed her the delete order function 
 >"Yeah, I didn't think about that but you definitely need it. Looks good."
+
 I queried her about how the examples portion of the home page is looking because it looks a bit bad.
+
 >"It looked good on the simple mockup but with the real images I think it looks bad. I don't like how it has the big border and title around the images. It would be better to just have the pictures without any of the description or title cluttering it."
+
 Before the implementing the change:
 
 ![Image with title](image.png)
