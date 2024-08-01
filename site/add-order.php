@@ -34,6 +34,10 @@ catch (PDOException $e) {
     die('<h2>There was an error sending data to the database. Please check that all of your selections were valid.<h2>');
 }
 
-header('location: index.php')
 ?>
 
+<h1>Success!</h1>
+<p>Thank you for placing your order with <?= SITE_NAME ?>. We will contact you about the status of your order shortly.</p>
+<a href="index.php">Return to home page</a>
+
+<? include 'partials/bottom.php';?>

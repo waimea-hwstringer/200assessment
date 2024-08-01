@@ -8,14 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= SITE_NAME ?></title>
     <link rel="stylesheet" href="css/styles.css">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.classless.min.css"
-    />
 </head>
 <body>
 <header>
-    <h1 id="logo"><?= SITE_LOGO ?></h1>
+    <img id="logo" src="images/<?= SITE_LOGO ?>">
     <nav>
         <a href='index.php'>Home</a>
         <a href='form-order.php'>Order</a>

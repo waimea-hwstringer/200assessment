@@ -71,7 +71,7 @@ foreach ($themes as $theme) {
             echo '<tr>';
             echo     '<td>' . $booking['name']  . '</td>';
             echo     '<td>' . $booking['datetime']  . '</td>';
-            echo     '<td><a href="order.php?id=' . $booking['id'] . '">🔗</a></td>';
+            echo     '<td><a href="order.php?id=' . $booking['id'] . '">ⓘ</a></td>';
             echo '</tr>';
         }
 

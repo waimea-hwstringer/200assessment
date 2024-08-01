@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*INDEX*******************************************************************************/
+
+header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+header > * {
+    margin: 0;
+}
+
+header h1 {
+    flex: 1;
+}
 
 #logo {
     max-width: 64px;
@@ -13,8 +36,88 @@ article {
     max-width: fit-content;
 }
 
+#heroImage {
+    display: flex;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: lightgray;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.paragraph h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph {
+    background-color: lime;
+}
+
+#orderNow a {
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+}
+
 .examples {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+/*ORDER*******************************************************************************/
+
+#orderHead {
+    font-weight: 400;
+}
+
+form {
+    background: #fff;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="datetime-local"],
+form select,
+form input[type="submit"] {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0.9rem;
+    background-color: rgb(217, 217, 217);
+}
+
+form input[type="submit"] {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #218838;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    padding: 1rem;
 }
