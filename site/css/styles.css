@@ -5,13 +5,14 @@ body {
 }
 
 /*INDEX*******************************************************************************/
+/*Nav bar & header---------------*/
 
 header {
     display: flex;
     gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: rgba(69, 186, 191, 1);
 }
 
 header > * {
@@ -20,6 +21,13 @@ header > * {
 
 header h1 {
     flex: 1;
+}
+
+header a {
+    text-decoration: none;
+    font-size: larger;
+    color:black;
+    margin-right: 1.5rem;
 }
 
 #logo {
@@ -31,6 +39,8 @@ img {
     max-width: 256px;
     max-height: 256px;
 }
+
+/*Main---------------*/
 
 article {
     max-width: fit-content;
@@ -51,17 +61,14 @@ article {
     justify-content: center;
 }
 
-.paragraph {
-    background-color: lime;
-}
-
 #orderNow a {
     display: flex;
     color: white;
     justify-content: center;
     padding: 1rem;
-    background-color: lightgrey;
+    background-color: rgba(69, 186, 191, 1);
     border-radius: 1rem;
+    text-decoration: none;
 }
 
 .examples {
@@ -70,10 +77,12 @@ article {
     gap: 1rem;
 }
 
-/*ORDER*******************************************************************************/
+/*ORDER*FORM*******************************************************************************/
 
-#orderHead {
+.formHead {
     font-weight: 400;
+    font-size: 2.8rem;
+    margin-left: 1rem;
 }
 
 form {
@@ -84,6 +93,7 @@ form {
 
 form label {
     font-weight: bold;
+    margin-left: 0.4rem;
 }
 
 form input[type="text"],
@@ -104,7 +114,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"] {
-    background: #28a745;
+    background: rgba(69, 186, 191, 1);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -112,12 +122,18 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: #218838;
+    background: rgb(53, 143, 146);
 }
+
+/*ADMIN*LOGIN*******************************************************************************/
+
+/*The text at the top of the admin login page is defined by the class .formHead which can be found on line 82 under the ORDER FORM scetion*/
+
+/*FOOTER*******************************************************************************/
 
 footer {
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: rgba(135, 197, 200, 1);
     padding: 1rem;
 }

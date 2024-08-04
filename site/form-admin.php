@@ -4,7 +4,7 @@ include 'partials/top.php';
 
 ?>
 
-<h1>Admin log in</h1>
+<h1 class="formHead">Admin log in</h1>
 
 <form method="post" action="login.php"> 
 
@@ -17,5 +17,6 @@ include 'partials/top.php';
     <input type="submit" value="Submit">
 
 </form>
-
+<section class="shortPage">
 <?php include 'partials/bottom.php';?>
+</section>

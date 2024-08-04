@@ -40,4 +40,4 @@ catch (PDOException $e) {
 <p>Thank you for placing your order with <?= SITE_NAME ?>. We will contact you about the status of your order shortly.</p>
 <a href="index.php">Return to home page</a>
 
-<? include 'partials/bottom.php';?>
+<?php include 'partials/bottom.php';?>

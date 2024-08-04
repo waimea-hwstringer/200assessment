@@ -68,7 +68,7 @@ $flavours = explode(',', $matches);
 
 ?>
 
-<h1 id="orderHead">Place an order</h1>
+<h1 class="formHead">Place an order</h1>
 
 <form method="post" action="add-order.php"> 
 

@@ -12,7 +12,7 @@
 
 <body>
 <header>
-    <img id="logo" src="images/<?= SITE_LOGO ?>">
+    <a href='index.php'><img id="logo" src="images/<?= SITE_LOGO ?>"></a>
     <nav>
         <a href='index-admin.php'>Back</a>
     </nav>

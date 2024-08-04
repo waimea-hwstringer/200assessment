@@ -11,12 +11,11 @@
 </head>
 <body>
 <header>
-    <img id="logo" src="images/<?= SITE_LOGO ?>">
+    <a href='index.php'><img id="logo" src="images/<?= SITE_LOGO ?>"></a>
     <nav>
         <a href='index.php'>Home</a>
         <a href='form-order.php'>Order</a>
         <a href='form-admin.php'>Admin</a>
-        <a href='index-admin.php'>;)</a>
     </nav>
 </header>
 <main>
