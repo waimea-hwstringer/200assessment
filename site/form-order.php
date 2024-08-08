@@ -100,7 +100,7 @@ $flavours = explode(',', $matches);
     </select>
 
     <label>Description of what you'd like</label>
-    <input name="note" type="text" required>
+    <textarea name="note" type="text" required class="largeTextInput"></textarea>
 
     <label>Theme</label>
     <select name="theme" required>
@@ -117,7 +117,7 @@ $flavours = explode(',', $matches);
     <label>Address</label>
     <input name="address" type="text" required>
 
-    <label>Delivery</label>
+    <label class="textBelow">Delivery</label>
     <p>We offer deliveries throughout Nelson for an additional $20 cost. After we have contacted you to confirm your order you can indicate whether or not you would like your cake to be delivered.</p>
 
     <input type="submit" value="submit" required>

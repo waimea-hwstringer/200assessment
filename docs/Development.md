@@ -157,23 +157,35 @@ I queried her about how the examples portion of the home page is looking because
 
 Before the implementing the change:
 
-![Image with title](image.png)
+![Image with title](images/DEVexample-title.png)
 
 After (Not super different but cleaner):
 
 ![image without title](images/DEVexample-no-title.png)
 
-### DATE HERE
+### 06/08/2024
 
-Replace this test with what you are working on
+Today I did some error testing
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+Here is a list of the errors that I discovered and resolved:
 
-### DATE HERE
+- You used to be able to put in themes that had no information or description. I solved this by making them required when the form is filled out.
 
-Replace this test with what you are working on
+![List of items without names](images/DEVempty-names.png)
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+-
+
+### 08/08/2024
+
+Itinerary to be discussed with client:
+
+- Aesthetics
+- Header image for the index page
+- Sizes for the cake tin
+- Pricing options
+- Wether or not she likes the about page text
+- Name of the website
+- What admin username and password she wants
 
 ### DATE HERE
 

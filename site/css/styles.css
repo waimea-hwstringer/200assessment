@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+@media only screen and (min-width: 600px){
+    .contents {
+        max-width: 45rem;
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 body {
     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*INDEX*******************************************************************************/
@@ -13,6 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: rgba(69, 186, 191, 1);
+    width: 100%;
 }
 
 header > * {
@@ -96,6 +111,24 @@ form label {
     margin-left: 0.4rem;
 }
 
+.uploadFileButton {
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0.9rem;
+    background-color: rgb(217, 217, 217);
+    margin-left: 0rem;
+    font-weight: 400;
+}
+
+input[type="file"] {
+    display: none;
+}
+  
 form input[type="text"],
 form input[type="password"],
 form input[type="email"],
@@ -111,6 +144,23 @@ form input[type="submit"] {
     border: 1px solid rgb(217, 217, 217);
     border-radius: 0.9rem;
     background-color: rgb(217, 217, 217);
+}
+
+textarea {
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 20px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0.9rem;
+    background-color: rgb(217, 217, 217);
+    font-family: "Inter", sans-serif;
+}
+
+.textBelow {
+    margin-left: 0rem;
+    margin-bottom: 0rem;
 }
 
 form input[type="submit"] {
@@ -129,6 +179,34 @@ form input[type="submit"]:hover {
 
 /*The text at the top of the admin login page is defined by the class .formHead which can be found on line 82 under the ORDER FORM scetion*/
 
+
+/*ADMIN*INDEX*******************************************************************************/
+
+.adminHead {
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin-left: 1rem;
+}
+
+#orderList {
+    margin-bottom: 3rem;
+}
+
+#adminButtons a {
+    background: rgba(69, 186, 191, 1);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
 /*FOOTER*******************************************************************************/
 
 footer {
@@ -136,4 +214,5 @@ footer {
     justify-content: center;
     background-color: rgba(135, 197, 200, 1);
     padding: 1rem;
+    width: 100%;
 }

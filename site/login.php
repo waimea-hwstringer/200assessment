@@ -3,7 +3,7 @@ require '_functions.php';
 include 'partials/top.php';
 ?>
 
-<h1>Signing in</h1>
+<h1 class="formHead">Admin log in</h1>
 
 <?php
 
@@ -36,7 +36,8 @@ if ($username == $admin['username'] && $password == $admin['password']) {
 }
 
 else {
-    echo 'Incorrect Username or Password';
+    echo 'Incorrect Username or Password.';
+    echo '<p>Click <a href="form-admin.php">here</a> to try again.';
 }
 
 include 'partials/bottom.php';

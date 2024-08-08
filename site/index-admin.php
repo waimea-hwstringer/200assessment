@@ -45,7 +45,7 @@ catch (PDOException $e) {
 //See what we got back
 consoleLog($bookings);
 
-echo '<h1>Admin list of Orders</h1>';
+echo '<h1 class="adminHead">Admin list of Orders</h1>';
 
 echo '<section id="orderList">';
 
@@ -82,7 +82,6 @@ echo '</section>';
 
 echo '<section id="adminButtons">';
     echo '<a href="form-theme.php">Edit Themes</a>';
-    echo '<br>';
     echo '<a href="form-example.php">Edit Examples</a>';
 echo '</section>';
 

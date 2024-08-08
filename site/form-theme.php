@@ -26,15 +26,15 @@ catch (PDOException $e) {
 consoleLog($themes);
 ?>
 
-<h1>Add a theme</h1>
+<h1 class="adminHead">Add a theme</h1>
 
 <form method="post" action="add-theme.php"> 
 
-    <label>Theme</label>
-    <input name="theme">
+    <label>Name</label>
+    <input name="theme" type="text" required >
 
     <label>Description</label>
-    <input name="description">
+    <textarea name="description" type="text" required ></textarea>
 
     <input type="submit" value="submit">
 

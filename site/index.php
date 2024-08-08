@@ -47,47 +47,50 @@ consoleLog($themes);
 
 ?>
 
-<div id="heroImage">
-    <h1><?= SITE_NAME ?></h1>
-</div>
-
-<section id="info">
-    <div class="paragraph">
-        <h3>About</h3>
-        <p>Welcome to <?=SITE_NAME?>, a premier destination for exquisite, handcrafted cakes in Nelson, New Zealand. We specialize in creating custom cakes for all occasions, from birthdays and weddings to corporate events. Our commitment to using high-quality ingredients and attention to detail ensures that each cake is not only visually stunning but also delicious. With a variety of flavors and designs to choose from, we work closely with our clients to bring their vision to life. Contact us today to discuss your requirements and let us help make your event truly special with a cake from <?=SITE_NAME?>.</p>
+<section class="contents">
+    
+    <div id="heroImage">
+        <h1><?= SITE_NAME ?></h1>
     </div>
-    <div class="paragraph">
-        <h3>Pricing</h3>
-        <p>$$$$$$$$$</p>
+
+    <section id="info">
+        <div class="paragraph">
+            <h3>About</h3>
+            <p>Welcome to <?=SITE_NAME?>, a premier destination for exquisite, handcrafted cakes in Nelson, New Zealand. We specialize in creating custom cakes for all occasions, from birthdays and weddings to corporate events. Our commitment to using high-quality ingredients and attention to detail ensures that each cake is not only visually stunning but also delicious. With a variety of flavors and designs to choose from, we work closely with our clients to bring their vision to life. Contact us today to discuss your requirements and let us help make your event truly special with a cake from <?=SITE_NAME?>.</p>
+        </div>
+        <div class="paragraph">
+            <h3>Pricing</h3>
+            <p>$$$$$$$$$</p>
+        </div>
+    </section>
+
+    <div id="orderNow">
+        <a href="form-order.php"><h2>Order now!</h2></a>
     </div>
-</section>
 
-<div id="orderNow">
-    <a href="form-order.php"><h2>Order now!</h2></a>
-</div>
+    <section id="examples">
+        <?php     
 
-<section id="examples">
-    <?php     
+            foreach ($themes as $theme) {
+                $hasExamples = false;
+                $themeContent = '';
 
-        foreach ($themes as $theme) {
-            $hasExamples = false;
-            $themeContent = '';
+                foreach($examples as $example) {
+                    if ($example['theme'] == $theme['id']) {
+                        $hasExamples = true;
+                        $themeContent .= '<article>';
+                        $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '">';
+                        $themeContent .= '</article>';
+                    }
+                }
 
-            foreach($examples as $example) {
-                if ($example['theme'] == $theme['id']) {
-                    $hasExamples = true;
-                    $themeContent .= '<article>';
-                    $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '">';
-                    $themeContent .= '</article>';
+                if ($hasExamples) {
+                    echo '<h3>' . $theme['theme'] . ' cakes </h3>';
+                    echo $themeContent;
                 }
             }
-
-            if ($hasExamples) {
-                echo '<h3>' . $theme['theme'] . ' cakes </h3>';
-                echo $themeContent;
-            }
-        }
-    ?>
+        ?>
+    </section>
 </section>
 
 <?php 

@@ -55,15 +55,15 @@ consoleLog($examples);
 //********************************************************************************** */
 ?>
 
-<h1>Add an example</h1>
+<h1 class="adminHead">Add an example</h1>
 
 <form method="post" action="add-example.php" enctype="multipart/form-data"> 
 
     <label>Name</label>
-    <input name="name">
+    <input name="name" type="text" required>
 
     <label>Description</label>
-    <input name="description">
+    <input name="description" type="text" required>
 
     <label>Theme</label>
     <select name="theme" required>
@@ -74,15 +74,16 @@ consoleLog($examples);
         ?>
     </select>
 
-    <label>Choose file</label>
-    <input type="file" name="image" accept="image/*" required>
+    <label>Image</label>
+    <label for="file-upload" class="uploadFileButton">🡢 Open folder</label>
+    <input id="file-upload" type="file" name="image" accept="image/*" required/>
 
     <input type="submit" value="submit">
 
 </form>
 
+<h1 class="adminHead">Delete an example</h1>
 
-<h1>Delete an example</h1>
 <section class="examples">
     <?php
     foreach($examples as $example) {
