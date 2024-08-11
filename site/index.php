@@ -76,8 +76,10 @@ consoleLog($themes);
                 $themeContent = '';
 
                 foreach($examples as $example) {
+                    
                     if ($example['theme'] == $theme['id']) {
                         $hasExamples = true;
+                        
                         $themeContent .= '<article>';
                         $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '">';
                         $themeContent .= '</article>';
@@ -85,13 +87,18 @@ consoleLog($themes);
                 }
 
                 if ($hasExamples) {
+                    
                     echo '<h3>' . $theme['theme'] . ' cakes </h3>';
+                    echo '<section class="exampleImages">';
                     echo $themeContent;
+                    echo '</section>';
+                    
                 }
             }
+
         ?>
     </section>
-</section>
+</section> <!-- Ends the contents section -->
 
 <?php 
 include 'partials/bottom.php'; 

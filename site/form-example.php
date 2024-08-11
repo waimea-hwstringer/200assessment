@@ -55,51 +55,55 @@ consoleLog($examples);
 //********************************************************************************** */
 ?>
 
-<h1 class="adminHead">Add an example</h1>
+<section class="contents">
 
-<form method="post" action="add-example.php" enctype="multipart/form-data"> 
+    <h1 class="adminHead">Add an example</h1>
 
-    <label>Name</label>
-    <input name="name" type="text" required>
+    <form method="post" action="add-example.php" enctype="multipart/form-data"> 
 
-    <label>Description</label>
-    <input name="description" type="text" required>
+        <label>Name</label>
+        <input name="name" type="text" required>
 
-    <label>Theme</label>
-    <select name="theme" required>
-        <?php 
-            foreach ($themes as $theme) {
-                echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
-            }
-        ?>
-    </select>
+        <label>Description</label>
+        <input name="description" type="text" required>
 
-    <label>Image</label>
-    <label for="file-upload" class="uploadFileButton">🡢 Open folder</label>
-    <input id="file-upload" type="file" name="image" accept="image/*" required/>
+        <label>Theme</label>
+        <select name="theme" required>
+            <?php 
+                foreach ($themes as $theme) {
+                    echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+                }
+            ?>
+        </select>
 
-    <input type="submit" value="submit">
+        <label>Image</label>
+        <label for="file-upload" class="uploadFileButton">🡢 Open folder</label>
+        <input id="file-upload" type="file" name="image" accept="image/*" required/>
 
-</form>
+        <input type="submit" value="submit">
 
-<h1 class="adminHead">Delete an example</h1>
+    </form>
 
-<section class="examples">
-    <?php
-    foreach($examples as $example) {
-        
-        echo '<article>';
-            echo '<h3>'.$example['ename'].'</h3>';
-            echo '<p>'.$example['tname'].'</p>';
-            echo '<p>'.$example['edesc'].'</p>';
-            echo   '<img src="load-image.php?id=' . $example['eid'] . '">';
-            echo '<br>';
-            echo '<a href="delete-example.php?id='.$example['eid'].'">';
-            echo '🗑';
-            echo '</a>';
-        echo '</article>';
-    }
+    <h1 class="adminHead">Delete an example</h1>
 
-echo '</section>';
+    <section class="examples">
+        <?php
+        foreach($examples as $example) {
+            
+            echo '<article>';
+                echo '<h3>'.$example['ename'].'</h3>';
+                echo '<p>'.$example['tname'].'</p>';
+                echo '<p>'.$example['edesc'].'</p>';
+                echo   '<img src="load-image.php?id=' . $example['eid'] . '">';
+                echo '<br>';
+                echo '<a href="delete-example.php?id='.$example['eid'].'">';
+                echo '🗑';
+                echo '</a>';
+            echo '</article>';
+        }
+
+    echo '</section>';
+
+echo '</section>'; ## Ends the contents section 
 
 include 'partials/bottom.php'; ?>

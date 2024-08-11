@@ -45,6 +45,8 @@ catch (PDOException $e) {
 //See what we got back
 consoleLog($bookings);
 
+echo '<section class="contents">';
+
 echo '<h1 class="adminHead">Admin list of Orders</h1>';
 
 echo '<section id="orderList">';
@@ -84,6 +86,8 @@ echo '<section id="adminButtons">';
     echo '<a href="form-theme.php">Edit Themes</a>';
     echo '<a href="form-example.php">Edit Examples</a>';
 echo '</section>';
+
+echo '</section>'; #Ends the contents section
 
 include 'partials/bottom.php'; 
 

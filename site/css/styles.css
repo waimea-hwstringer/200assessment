@@ -3,7 +3,7 @@
 
 @media only screen and (min-width: 600px){
     .contents {
-        max-width: 45rem;
+        max-width: 55rem;
         justify-self: center;
         align-self: center;
         justify-content: center;
@@ -55,6 +55,19 @@ img {
     max-height: 256px;
 }
 
+.exampleImages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#examples h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
 /*Main---------------*/
 
 article {
@@ -72,6 +85,11 @@ article {
 }
 
 .paragraph h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph p {
     display: flex;
     justify-content: center;
 }

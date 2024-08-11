@@ -68,60 +68,63 @@ $flavours = explode(',', $matches);
 
 ?>
 
-<h1 class="formHead">Place an order</h1>
+<section class="contents">
+        
+    <h1 class="formHead">Place an order</h1>
 
-<form method="post" action="add-order.php"> 
+    <form method="post" action="add-order.php"> 
 
-    <label>Full Name</label>
-    <input name="name" type="text" required>
+        <label>Full Name</label>
+        <input name="name" type="text" required>
 
-    <label>Email</label>
-    <input name="email" type="email" required>
+        <label>Email</label>
+        <input name="email" type="email" required>
 
-    <label>Phone</label>
-    <input name="phone" type="text" required>
+        <label>Phone</label>
+        <input name="phone" type="text" required>
 
-    <label>Size</label>
-    <select name="size" required>
-        <?php 
-            foreach ($sizes as $size) {
-                echo '<option value="'.$size.'">'.$size.'</option>';
-            }
-        ?>
-    </select>
+        <label>Size</label>
+        <select name="size" required>
+            <?php 
+                foreach ($sizes as $size) {
+                    echo '<option value="'.$size.'">'.$size.'</option>';
+                }
+            ?>
+        </select>
 
-    <label>Flavour</label>
-    <select name="flavour" required>
-        <?php 
-            foreach ($flavours as $flavour) {
-                echo '<option value="'.$flavour.'">'.$flavour.'</option>';
-            }
-        ?>
-    </select>
+        <label>Flavour</label>
+        <select name="flavour" required>
+            <?php 
+                foreach ($flavours as $flavour) {
+                    echo '<option value="'.$flavour.'">'.$flavour.'</option>';
+                }
+            ?>
+        </select>
 
-    <label>Description of what you'd like</label>
-    <textarea name="note" type="text" required class="largeTextInput"></textarea>
+        <label>Description of what you'd like</label>
+        <textarea name="note" type="text" required class="largeTextInput"></textarea>
 
-    <label>Theme</label>
-    <select name="theme" required>
-        <?php 
-            foreach ($themes as $theme) {
-                echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
-            }
-        ?>
-    </select>
+        <label>Theme</label>
+        <select name="theme" required>
+            <?php 
+                foreach ($themes as $theme) {
+                    echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+                }
+            ?>
+        </select>
 
-    <label>Date & Time needed by</label>
-    <input name="datetime" type="datetime-local" min="<?= date('Y-m-d') ?>" required>
+        <label>Date & Time needed by</label>
+        <input name="datetime" type="datetime-local" min="<?= date('Y-m-d') ?>" required>
 
-    <label>Address</label>
-    <input name="address" type="text" required>
+        <label>Address</label>
+        <input name="address" type="text" required>
 
-    <label class="textBelow">Delivery</label>
-    <p>We offer deliveries throughout Nelson for an additional $20 cost. After we have contacted you to confirm your order you can indicate whether or not you would like your cake to be delivered.</p>
+        <label class="textBelow">Delivery</label>
+        <p>We offer deliveries throughout Nelson for an additional $20 cost. After we have contacted you to confirm your order you can indicate whether or not you would like your cake to be delivered.</p>
 
-    <input type="submit" value="submit" required>
+        <input type="submit" value="submit" required>
 
-</form>
+    </form>
+</section> <!-- Ends the contents section -->
 
 <?php include 'partials/bottom.php'; ?>

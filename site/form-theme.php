@@ -26,6 +26,8 @@ catch (PDOException $e) {
 consoleLog($themes);
 ?>
 
+<section class="contents">
+
 <h1 class="adminHead">Add a theme</h1>
 
 <form method="post" action="add-theme.php"> 
@@ -55,5 +57,7 @@ foreach($themes as $theme) {
 
     echo '</li>';
 }
+
+echo'</section>'; ## Ends the contents section
 
 include 'partials/bottom.php'; ?>

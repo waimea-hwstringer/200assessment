@@ -4,19 +4,23 @@ include 'partials/top.php';
 
 ?>
 
-<h1 class="formHead">Admin log in</h1>
+<section class="contents">
 
-<form method="post" action="login.php"> 
+    <h1 class="formHead">Admin log in</h1>
 
-    <label>Username</label>
-    <input name="username" type="text" required>
+    <form method="post" action="login.php"> 
 
-    <label>Password</label>
-    <input name="password" type="password" required>
+        <label>Username</label>
+        <input name="username" type="text" required>
 
-    <input type="submit" value="Submit">
+        <label>Password</label>
+        <input name="password" type="password" required>
 
-</form>
-<section class="shortPage">
-<?php include 'partials/bottom.php';?>
-</section>
+        <input type="submit" value="Submit">
+
+    </form>
+    <section class="shortPage">
+    <?php include 'partials/bottom.php';?>
+    </section>
+
+</section> <!-- Ends the contents section -->
