@@ -167,13 +167,9 @@ After (Not super different but cleaner):
 
 Today I did some error testing
 
-Here is a list of the errors that I discovered and resolved:
-
-- You used to be able to put in themes that had no information or description. I solved this by making them required when the form is filled out.
+You used to be able to put in themes that had no information or description. I solved this by making them required when the form is filled out.
 
 ![List of items without names](images/DEVempty-names.png)
-
--
 
 ### 08/08/2024
 
@@ -186,6 +182,8 @@ Itinerary to be discussed with client:
 - Wether or not she likes the about page text
 - Name of the website
 - What admin username and password she wants
+- What logo she wants
+- Whether or not she thinks a section for tiers is necessary on the order form
 
 ### DATE HERE
 
