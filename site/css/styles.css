@@ -9,6 +9,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    #heroImage h1 {
+        margin: 0;
+    }
 }
 
 body {
@@ -16,6 +20,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.contents {
+    flex: 1;
 }
 
 /*INDEX*******************************************************************************/
@@ -51,8 +61,8 @@ header a {
 }
 
 img {
-    max-width: 256px;
-    max-height: 256px;
+    max-width: 12rem;
+    max-height: 12rem;
 }
 
 .exampleImages {
@@ -74,17 +84,23 @@ article {
     max-width: fit-content;
 }
 
-#heroImage {
+#heroImage h1 {
     display: flex;
     margin-top: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: lightgray;
     justify-content: center;
     padding: 4rem;
 }
 
+#heroImage {
+    background-image: url('../images/heroimage.png');
+    background-size: cover;
+    margin-top: 0;
+}
+
 .paragraph h3 {
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -92,9 +108,12 @@ article {
 .paragraph p {
     display: flex;
     justify-content: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
 }
 
 #orderNow a {
+    padding-top: 20rem;
     display: flex;
     color: white;
     justify-content: center;
@@ -102,6 +121,7 @@ article {
     background-color: rgba(69, 186, 191, 1);
     border-radius: 1rem;
     text-decoration: none;
+    margin:1rem;
 }
 
 .examples {
@@ -231,6 +251,9 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgba(135, 197, 200, 1);
-    padding: 1rem;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    bottom: 0;
 }
