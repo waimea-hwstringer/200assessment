@@ -200,13 +200,12 @@ Today I discussed the changes with my client. Here is what I found:
 - She thinks that we will need a section for tiers.
 
 Additional problems that she had:
-Certain texts need to be capitalised
-Carrot was added as a flavour enum for the flavour type on the bookings table
+Certain letters need to be capitalised
+Carrot was added as an enum value for the flavour type on the bookings table
 Added shape of cake tin (under size enum)
 
 Themes for cakes added:
 - Baby shower
-- Gender reveal
 - Anniversary
 
 I will need to implement these features tomorrow.
