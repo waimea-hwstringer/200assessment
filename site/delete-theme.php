@@ -22,9 +22,11 @@ try {
 
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('Could not delete theme. This is most likely because there are examples that use this theme. These must be deleted before the theme can be deleted.');
+    die('Could not delete theme. This is most likely because there are examples or orders that use this theme. These must be deleted before the theme can be deleted.');
 }
 
 header('location: form-theme.php')
+
+include 'partials/bottom.php';
 
 ?>

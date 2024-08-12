@@ -83,7 +83,7 @@ $flavours = explode(',', $matches);
         <label>Phone</label>
         <input name="phone" type="text" required>
 
-        <label>Size</label>
+        <label>Size & Shape</label>
         <select name="size" required>
             <?php 
                 foreach ($sizes as $size) {

@@ -190,10 +190,26 @@ Itinerary to be discussed with client:
 Today I discussed the changes with my client. Here is what I found:
 
 - Aesthetically the website was good
-- N/A
+- We measured all of our cake tins (we have square ones that I need to add as well)
 - We measured the sizes of the cake tins that are available
 - Pricing sections should say that prices start from $80.
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+- About page was fine
+- The name of the website is Mad as Cakes
+- We changed the username to mpstringer and the password is Reading1871
+- N/A
+- She thinks that we will need a section for tiers.
+
+Additional problems that she had:
+Certain texts need to be capitalised
+Carrot was added as a flavour enum for the flavour type on the bookings table
+Added shape of cake tin (under size enum)
+
+Themes for cakes added:
+- Baby shower
+- Gender reveal
+- Anniversary
+
+I will need to implement these features tomorrow.
 
 ### DATE HERE
 
