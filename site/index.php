@@ -60,7 +60,7 @@ consoleLog($themes);
         </div>
         <div class="paragraph">
             <h3>Pricing</h3>
-            <p>$$$$$$$$$</p>
+            <p>Our custom cakes are crafted with care and creativity, perfect for any occasion. Prices start from $80, ensuring you get a delicious and beautifully designed cake that suits your budget.</p>
         </div>
     </section>
 

@@ -185,10 +185,14 @@ Itinerary to be discussed with client:
 - What logo she wants
 - Whether or not she thinks a section for tiers is necessary on the order form
 
-### DATE HERE
+### 12/08/2024
 
-Replace this test with what you are working on
+Today I discussed the changes with my client. Here is what I found:
 
+- Aesthetically the website was good
+- N/A
+- We measured the sizes of the cake tins that are available
+- Pricing sections should say that prices start from $80.
 Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
 
 ### DATE HERE
