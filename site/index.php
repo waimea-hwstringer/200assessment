@@ -99,9 +99,6 @@ consoleLog($themes);
         ?>
     </section>
 </section> <!-- Ends the contents section -->
-
-Hello world!
-
 <?php 
 include 'partials/bottom.php'; 
 ?>

@@ -28,35 +28,35 @@ consoleLog($themes);
 
 <section class="contents">
 
-<h1 class="adminHead">Add a theme</h1>
+    <h1 class="adminHead">Add a theme</h1>
 
-<form method="post" action="add-theme.php"> 
+    <form method="post" action="add-theme.php"> 
 
-    <label>Name</label>
-    <input name="theme" type="text" required >
+        <label>Name</label>
+        <input name="theme" type="text" required >
 
-    <label>Description</label>
-    <textarea name="description" type="text" required ></textarea>
+        <label>Description</label>
+        <textarea name="description" type="text" required ></textarea>
 
-    <input type="submit" value="submit">
+        <input type="submit" value="submit">
 
-</form>
+    </form>
 
-<?php
+    <?php
 
-echo '<h1>Delete a theme</h1>';
+    echo '<h1>Delete a theme</h1>';
 
-foreach($themes as $theme) {
-    
-    echo '<li>';
+    foreach($themes as $theme) {
+        
+        echo '<li>';
 
-        echo $theme['theme'];
-        echo '<a href="delete-theme.php?id='.$theme['id'].'">';
-        echo '🗑';
-        echo '</a>';
+            echo $theme['theme'];
+            echo '<a href="delete-theme.php?id='.$theme['id'].'">';
+            echo '🗑';
+            echo '</a>';
 
-    echo '</li>';
-}
+        echo '</li>';
+    }
 
 echo'</section>'; ## Ends the contents section
 
