@@ -28,9 +28,9 @@ consoleLog($themes);
 
 <section class="contents">
 
-    <h1 class="adminHead">Add a theme</h1>
+    <h1 class="adminHead">Add a Theme</h1>
 
-    <form method="post" action="add-theme.php"> 
+    <form method="post" action="add-theme.php" id="addThemeForm"> 
 
         <label>Name</label>
         <input name="theme" type="text" required >
@@ -42,21 +42,23 @@ consoleLog($themes);
 
     </form>
 
-    <?php
+    <div id="deleteList">
+        <?php
 
-    echo '<h1>Delete a theme</h1>';
+        echo '<h1 class="adminHead">Delete a Theme</h1>';
 
-    foreach($themes as $theme) {
-        
-        echo '<li>';
+        foreach($themes as $theme) {
+            
+            echo '<li>';
 
-            echo $theme['theme'];
-            echo '<a href="delete-theme.php?id='.$theme['id'].'">';
-            echo '🗑';
-            echo '</a>';
+                echo $theme['theme'];
+                echo '<a href="delete-theme.php?id='.$theme['id'].'">';
+                echo '<img id="deleteIcon" src="images/delete.png">';
+                echo '</a>';
 
-        echo '</li>';
-    }
+            echo '</li>';
+        }
+    echo '</div>';
 
 echo'</section>'; ## Ends the contents section
 

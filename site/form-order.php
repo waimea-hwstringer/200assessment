@@ -75,7 +75,7 @@ $flavours = explode(',', $matches);
     <form method="post" action="add-order.php"> 
 
         <label>Full Name</label>
-        <input name="name" type="text" required>
+        <input name="name" type="text" maxlength="25" required>
 
         <label>Email</label>
         <input name="email" type="email" required>

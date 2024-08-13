@@ -52,7 +52,7 @@ echo '<h1 class="adminHead">Admin list of Orders</h1>';
 echo '<section id="orderList">';
 
 foreach ($themes as $theme) {
-    echo '<h3>' . $theme['theme'] . ' cakes </h3>';
+    echo '<h3 class="adminTableTitle">' . $theme['theme'] . ' cakes </h3>';
 
     // Filter bookings for the current theme
     $themeBookings = array_filter($bookings, function($booking) use ($theme) {

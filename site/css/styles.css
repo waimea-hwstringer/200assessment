@@ -12,9 +12,6 @@
         align-items: center;
     }
 
-    #heroImage h1 {
-        margin: 0;
-    }
 }
 
 html {
@@ -76,14 +73,17 @@ img {
     max-height: 12rem;
 }
 
-.exampleImages {
+/*Main portion---------------*/
+
+.indexExampleImages {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
-#examples h3{
+#indexExamples h3{
     display: flex;
     justify-content: center;
     padding-top: 3rem;
@@ -232,8 +232,17 @@ form input[type="submit"]:hover {
 /*The text at the top of the admin login page is defined by the class .formHead which can be found on line 82 under the ORDER FORM scetion*/
 
 #adminLogin {
-    border: 5px solid red;
-    color: red;
+    border: 5px solid rgb(53, 143, 146);
+    background-color: rgb(193, 223, 223);
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#adminLogin form {
+    background-color: inherit;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 /*ADMIN*INDEX*******************************************************************************/
@@ -241,7 +250,7 @@ form input[type="submit"]:hover {
 .adminHead {
     font-weight: 400;
     font-size: 2.4rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 #orderList {
@@ -261,6 +270,105 @@ form input[type="submit"]:hover {
     text-decoration: none;
     margin-bottom: 1.5rem;
     text-align: center;
+}
+
+.adminTableTitle {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    padding-right: 1rem;
+}
+
+td a {
+    text-align: center;
+    text-decoration: none;
+}
+
+/*FORM*THEME*******************************************************************************/
+
+#addThemeForm {
+    width: 30rem;
+}
+
+@media only screen and (max-width: 600px) { /*makes the form less wide when the screen is lower than 600px*/
+    #addThemeForm {
+        width: 100%;
+    }
+}
+
+
+#deleteIcon {
+    max-height: 1.2rem;
+}
+
+#deleteList {
+    padding: 0;
+    list-style-type:none;
+    display: block;
+    text-decoration: none;
+}
+
+#deleteList li{
+    margin-bottom: 0.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(119, 119, 119);
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0.9rem;
+    background-color: rgb(217, 217, 217);
+    font-family: "Inter", sans-serif;
+}
+
+#deleteList li a {
+    text-decoration: none;
+
+}
+
+/*FORM*EXAMPLE*******************************************************************************/
+
+#adminExamples{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.adminExampleContainer {
+    position: relative;
+    max-width: 16rem;
+    margin-right: 1rem;
+}
+
+.adminExampleImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.adminExampleOverlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(53, 143, 146);
+  color: #000000;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.adminExampleContainer:hover .adminExampleOverlay {
+  opacity: 1;
 }
 
 /*FOOTER*******************************************************************************/

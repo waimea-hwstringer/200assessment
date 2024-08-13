@@ -68,7 +68,7 @@ consoleLog($themes);
         <a href="form-order.php"><h2>Order now!</h2></a>
     </div>
 
-    <section id="examples">
+    <section id="indexExamples">
         <?php     
 
             foreach ($themes as $theme) {
@@ -89,7 +89,7 @@ consoleLog($themes);
                 if ($hasExamples) {
                     
                     echo '<h3>' . $theme['theme'] . ' cakes </h3>';
-                    echo '<section class="exampleImages">';
+                    echo '<section class="indexExampleImages">';
                     echo $themeContent;
                     echo '</section>';
                     

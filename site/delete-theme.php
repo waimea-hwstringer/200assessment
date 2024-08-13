@@ -27,6 +27,4 @@ catch (PDOException $e) {
 
 header('location: form-theme.php')
 
-include 'partials/bottom.php';
-
 ?>

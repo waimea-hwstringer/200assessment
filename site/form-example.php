@@ -86,23 +86,25 @@ consoleLog($examples);
 
     <h1 class="adminHead">Delete an example</h1>
 
-    <section class="examples">
+    <section id="adminExamples">
         <?php
         foreach($examples as $example) {
-            
-            echo '<article>';
-                echo '<h3>'.$example['ename'].'</h3>';
-                echo '<p>'.$example['tname'].'</p>';
-                echo '<p>'.$example['edesc'].'</p>';
-                echo   '<img src="load-image.php?id=' . $example['eid'] . '">';
-                echo '<br>';
-                echo '<a href="delete-example.php?id='.$example['eid'].'">';
-                echo '🗑';
-                echo '</a>';
-            echo '</article>';
-        }
 
+            echo '<div class="adminExampleContainer">';
+
+                echo '<img src="load-image.php?id=' . $example['eid'] . '" class="adminExampleImage">';
+
+                echo '<div class="adminExampleOverlay"> 
+                    <h3>'.$example['ename'].'</h3> 
+                    <p>'.$example['tname'].'</p>
+                    <a href="delete-example.php?id='.$example['eid'].'">
+                        <img id="deleteIcon" src="images/delete.png">
+                    </a>';
+                echo '</div>';
+            echo '</div>';
+        }
     echo '</section>';
+    
 
 echo '</section>'; ## Ends the contents section 
 

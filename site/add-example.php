@@ -35,7 +35,7 @@ try {
 
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Upload Picture', ERROR);
-    die('There was an error adding picture to the database');
+    die('There was an error adding picture to the database. Please try again.');
 }
 
 header('location: form-example.php')
