@@ -92,6 +92,9 @@ $flavours = explode(',', $matches);
             ?>
         </select>
 
+        <label>Tiers</label>
+        <input name="tiers" type="number" min="1" max="5" required>
+
         <label>Flavour</label>
         <select name="flavour" required>
             <?php 

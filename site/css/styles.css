@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 
 @media only screen and (min-width: 600px){
     .contents {
@@ -15,6 +17,13 @@
     }
 }
 
+html {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: "Inter", sans-serif;
     display: flex;
@@ -22,10 +31,12 @@ body {
     align-items: center;
     width: 100%;
     margin: 0;
+    min-height: 100vh;
 }
 
 .contents {
     flex: 1;
+    width: 100%;
 }
 
 /*INDEX*******************************************************************************/
@@ -50,14 +61,14 @@ header h1 {
 
 header a {
     text-decoration: none;
-    font-size: larger;
+    font-size: 1.5rem;
     color:black;
     margin-right: 1.5rem;
 }
 
 #logo {
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 108px;
+    max-height: 108px;
 }
 
 img {
@@ -85,12 +96,16 @@ article {
 }
 
 #heroImage h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
     display: flex;
     margin-top: 1rem;
     color: rgb(0, 0, 0);
     text-decoration: none;
     justify-content: center;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 #heroImage {
@@ -113,7 +128,6 @@ article {
 }
 
 #orderNow a {
-    padding-top: 20rem;
     display: flex;
     color: white;
     justify-content: center;
@@ -217,6 +231,10 @@ form input[type="submit"]:hover {
 
 /*The text at the top of the admin login page is defined by the class .formHead which can be found on line 82 under the ORDER FORM scetion*/
 
+#adminLogin {
+    border: 5px solid red;
+    color: red;
+}
 
 /*ADMIN*INDEX*******************************************************************************/
 
@@ -252,8 +270,8 @@ footer {
     justify-content: center;
     background-color: rgba(135, 197, 200, 1);
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 3rem;
-    bottom: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: auto;
+    bottom:0;
 }

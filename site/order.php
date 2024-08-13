@@ -20,6 +20,7 @@ $query = 'SELECT themes.theme AS themeNAME,
                  bookings.email,
                  bookings.phone,
                  bookings.size,
+                 bookings.tiers,
                  bookings.flavour,
                  bookings.note,
                  bookings.datetime,
@@ -61,6 +62,9 @@ echo '<td>'.$booking['phone'].'</td></tr>';
 
 echo '<tr><th>Size</th>';
 echo '<td>'.$booking['size'].'</td></tr>';
+
+echo '<tr><th>Tiers</th>';
+echo '<td>'.$booking['tiers'].'</td></tr>';
 
 echo '<tr><th>Flavour</th>';
 echo '<td>'.$booking['flavour'].'</td></tr>';
