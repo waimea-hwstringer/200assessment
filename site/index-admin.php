@@ -65,14 +65,14 @@ foreach ($themes as $theme) {
         echo '<table>';
         echo    '<tr>';
         echo        '<th>Name</th>';
-        echo        '<th>Date & Time</th>';
+        echo        '<th class="adminDatetime">Date & Time</th>';
         echo        '<th>More info</th>';
         echo    '</tr>';
 
         foreach ($themeBookings as $booking) {
             echo '<tr>';
             echo     '<td>' . $booking['name']  . '</td>';
-            echo     '<td>' . $booking['datetime']  . '</td>';
+            echo     '<td class="adminDatetime">' . $booking['datetime']  . '</td>';
             echo     '<td><a href="order.php?id=' . $booking['id'] . '">ⓘ</a></td>';
             echo '</tr>';
         }

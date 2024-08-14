@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px){ /*hides the home link from the navbar when the screen is narrow*/
     .contents {
         max-width: 55rem;
         justify-self: center;
@@ -36,8 +36,18 @@ body {
     width: 100%;
 }
 
+p {
+    margin-left:1rem;
+}
+
 /*INDEX*******************************************************************************/
 /*Nav bar & header---------------*/
+
+@media only screen and (max-width: 450px) { 
+    .navbarHome {
+        display: none;
+    }
+}
 
 header {
     display: flex;
@@ -188,7 +198,7 @@ form input[type="number"],
 form input[type="datetime-local"],
 form select,
 form input[type="submit"] {
-    display: block;
+    
     font-size: 1rem;
     width: 100%;
     padding: 0.5rem;
@@ -221,6 +231,7 @@ form input[type="submit"] {
     border: none;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 1rem;
 }
 
 form input[type="submit"]:hover {
@@ -233,16 +244,22 @@ form input[type="submit"]:hover {
 
 #adminLogin {
     border: 5px solid rgb(53, 143, 146);
-    background-color: rgb(193, 223, 223);
+    background-color: rgb(255, 255, 255);
     margin-top: 3rem;
     padding: 2rem;
     border-radius: 1rem;
+    max-width: 25rem;
 }
 
 #adminLogin form {
     background-color: inherit;
     padding: 1rem;
     margin: 0 auto;
+}
+
+#adminLogin form input[type="text"], 
+#adminLogin form input[type="password"] {
+    max-width: 22rem;
 }
 
 /*ADMIN*INDEX*******************************************************************************/
@@ -272,12 +289,20 @@ form input[type="submit"]:hover {
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) { 
+    .adminDatetime {
+        display: none;
+    }
+}
+
 .adminTableTitle {
     text-decoration: underline;
+    margin: 1rem;
 }
 
 table {
     width: 100%;
+    margin: 1rem;
 }
 
 td {
