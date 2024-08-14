@@ -24,7 +24,8 @@ $query = 'SELECT themes.theme AS themeNAME,
                  bookings.flavour,
                  bookings.note,
                  bookings.datetime,
-                 bookings.address
+                 bookings.address,
+                 bookings.delivery
           FROM bookings
           JOIN themes ON themes.id = bookings.theme
           WHERE bookings.id = ?';
@@ -49,43 +50,55 @@ consoleLog($booking);
 
 //********************************************************************************************************************************************* */
 
-echo '<table>';
+echo '<section class="contents">';
+    echo '<section id="infoOrderTable">';
 
-echo '<tr><th>Name</th>';
-echo '<td>'.$booking['name'].'</td></tr>';
+        echo '<h1 class="formHead" >Order Details</h1>';
+        echo '<table>';
 
-echo '<tr><th>Email</th>';
-echo '<td>'.$booking['email'].'</td></tr>';
+            echo '<tr><th>Name</th>';
+            echo '<td>'.$booking['name'].'</td></tr>';
 
-echo '<tr><th>Phone</th>';
-echo '<td>'.$booking['phone'].'</td></tr>';
+            echo '<tr><th>Email</th>';
+            echo '<td>'.$booking['email'].'</td></tr>';
 
-echo '<tr><th>Size</th>';
-echo '<td>'.$booking['size'].'</td></tr>';
+            echo '<tr><th>Phone</th>';
+            echo '<td>'.$booking['phone'].'</td></tr>';
 
-echo '<tr><th>Tiers</th>';
-echo '<td>'.$booking['tiers'].'</td></tr>';
+            echo '<tr><th>Size</th>';
+            echo '<td>'.$booking['size'].'</td></tr>';
 
-echo '<tr><th>Flavour</th>';
-echo '<td>'.$booking['flavour'].'</td></tr>';
+            echo '<tr><th>Tiers</th>';
+            echo '<td>'.$booking['tiers'].'</td></tr>';
 
-echo '<tr><th>Description</th>';
-echo '<td>'.$booking['note'].'</td></tr>';
+            echo '<tr><th>Flavour</th>';
+            echo '<td>'.$booking['flavour'].'</td></tr>';
 
-echo '<tr><th>Theme</th>';
-echo '<td>'.$booking['themeNAME'].'</td></tr>';
+            echo '<tr><th>Description</th>';
+            echo '<td>'.$booking['note'].'</td></tr>';
 
-echo '<tr><th>Date & Time</th>';
-echo '<td>'.$booking['datetime'].'</td></tr>';
+            echo '<tr><th>Theme</th>';
+            echo '<td>'.$booking['themeNAME'].'</td></tr>';
 
-echo '<tr><th>Address</th>';
-echo '<td>'.$booking['address'].'</td></tr>';
+            echo '<tr><th>Date & Time</th>';
+            echo '<td>'.$booking['datetime'].'</td></tr>';
 
-echo '</table>';
+            echo '<tr><th>Address</th>';
+            echo '<td>'.$booking['address'].'</td></tr>';
 
-echo '<a href="delete-order.php?id='.$booking['id'].'">';
-echo 'Delete order';
-echo '</a>';
+            echo '<tr><th>Delivery</th>';
+            echo '<td>'.$booking['delivery'].'</td></tr>';
+
+        echo '</table>';
+
+        echo '<a href="delete-order.php?id='.$booking['id'].'">';
+            echo 'Delete order?';
+            echo '<img src="images/delete.png">';
+        echo '</a>';
+
+    echo '</section>'; #ends infoOrderTable section
+
+echo '</section>'; #Ends contents section (for media query)
 
 include 'partials/bottom.php';
 ?>

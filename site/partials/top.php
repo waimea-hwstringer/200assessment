@@ -11,7 +11,10 @@
 </head>
 <body>
 <header>
-    <a href='index.php'><img id="logo" src="images/<?= SITE_LOGO ?>"></a>
+    <div class="logoContainer">
+        <a href='index.php'><img id="logo" src="images/logo.png"></a>
+        <a href='index.php'><img id="logoMIN" src="images/logoMIN.png"></a>
+    </div>
     <nav>
         <a href='index.php' class="navbarHome">Home</a>
         <a href='form-order.php'>Order</a>

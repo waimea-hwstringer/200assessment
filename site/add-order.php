@@ -16,18 +16,19 @@ $note = $_POST['note'];
 $theme = $_POST['theme'];
 $datetime = $_POST['datetime'];
 $address = $_POST['address'];
+$delivery = $_POST['delivery'];
 
 $db = connectToDB();
 
 //Setup a query to insert all company info
 $query = 'INSERT INTO bookings
-           (`name`, email, phone, `size`, tiers, flavour, note, theme, `datetime`, `address`) 
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+           (`name`, email, phone, `size`, tiers, flavour, note, theme, `datetime`, `address`, delivery) 
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 
 //Attempt to run the query
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$name, $email, $phone, $size, $tiers, $flavour, $note, $theme, $datetime, $address]);
+    $stmt->execute([$name, $email, $phone, $size, $tiers, $flavour, $note, $theme, $datetime, $address, $delivery]);
 }
 
 catch (PDOException $e) {

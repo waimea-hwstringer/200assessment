@@ -49,7 +49,7 @@ echo '<section class="contents">';
 
 echo '<h1 class="adminHead">Admin list of Orders</h1>';
 
-echo '<section id="orderList">';
+echo '<section id="adminOrderTable">';
 
 foreach ($themes as $theme) {
     echo '<h3 class="adminTableTitle">' . $theme['theme'] . ' cakes </h3>';

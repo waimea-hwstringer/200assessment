@@ -56,7 +56,7 @@ consoleLog($examples);
 ?>
 
 <section class="contents">
-
+<section id="adminExampleContents">
     <h1 class="adminHead">Add an example</h1>
 
     <form method="post" action="add-example.php" enctype="multipart/form-data"> 
@@ -105,7 +105,7 @@ consoleLog($examples);
         }
     echo '</section>';
     
-
+echo '</section>';
 echo '</section>'; ## Ends the contents section 
 
 include 'partials/bottom.php'; ?>

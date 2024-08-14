@@ -26,7 +26,7 @@
     catch (Exception $e) {
         // Failed, so 404
         http_response_code(404);
-        die("uh oh");
+        die("Something went wrong. Please try again later");
     }
 
     //--------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 @media only screen and (min-width: 600px){ /*hides the home link from the navbar when the screen is narrow*/
@@ -36,15 +36,23 @@ body {
     width: 100%;
 }
 
-p {
-    margin-left:1rem;
-}
-
 /*INDEX*******************************************************************************/
 /*Nav bar & header---------------*/
 
-@media only screen and (max-width: 450px) { 
+@media only screen and (max-width: 750px) { 
     .navbarHome {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 580px) { 
+    #logo {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 580px) { 
+    #logoMIN {
         display: none;
     }
 }
@@ -56,6 +64,7 @@ header {
     justify-content: space-between;
     background-color: rgba(69, 186, 191, 1);
     width: 100%;
+    height: 7rem;
 }
 
 header > * {
@@ -74,8 +83,14 @@ header a {
 }
 
 #logo {
-    max-width: 108px;
-    max-height: 108px;
+    max-width: 264px;
+    margin-left: 1rem;
+}
+
+#logoMIN {
+    max-width: 4rem;
+    margin-left: 1rem;
+    float: left;
 }
 
 img {
@@ -106,20 +121,35 @@ article {
 }
 
 #heroImage h1 {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     font-style: normal;
     font-size: 3rem;
     display: flex;
     margin-top: 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(202, 20, 65);
     text-decoration: none;
     justify-content: center;
     padding: 3rem;
 }
 
+@media only screen and (max-width: 580px) { 
+    #heroImage h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.8rem;
+        display: flex;
+        margin-top: 1rem;
+        color: rgb(202, 20, 65);
+        text-decoration: none;
+        justify-content: center;
+        padding: 3rem;
+    }
+}
+
 #heroImage {
-    background-image: url('../images/heroimage.png');
+    background-image: url('../images/heroimage2.png');
     background-size: cover;
     margin-top: 0;
 }
@@ -156,7 +186,15 @@ article {
 
 /*ORDER*FORM*******************************************************************************/
 
-.formHead {
+/*also contains common styles for other forms*/
+
+@media only screen and (max-width: 880px) { /*makes the form less wide when the screen is lower than 880px*/
+    #orderForm {
+        width: 16rem;
+    }
+}
+
+.formHead {  /*styles the header text on most  pages*/
     font-weight: 400;
     font-size: 2.8rem;
     margin-left: 1rem;
@@ -220,11 +258,6 @@ textarea {
     font-family: "Inter", sans-serif;
 }
 
-.textBelow {
-    margin-left: 0rem;
-    margin-bottom: 0rem;
-}
-
 form input[type="submit"] {
     background: rgba(69, 186, 191, 1);
     color: #fff;
@@ -245,8 +278,8 @@ form input[type="submit"]:hover {
 #adminLogin {
     border: 5px solid rgb(53, 143, 146);
     background-color: rgb(255, 255, 255);
-    margin-top: 3rem;
-    padding: 2rem;
+    margin: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     max-width: 25rem;
 }
@@ -270,8 +303,12 @@ form input[type="submit"]:hover {
     margin-left: 0.5rem;
 }
 
-#orderList {
+#adminOrderTable {
     margin-bottom: 3rem;
+}
+
+#adminOrderTable p {
+    margin-left: 2rem;
 }
 
 #adminButtons a {
@@ -300,19 +337,64 @@ form input[type="submit"]:hover {
     margin: 1rem;
 }
 
-table {
+#adminOrderTable table {
     width: 100%;
     margin: 1rem;
 }
 
-td {
+#adminOrderTable td {
     text-align: center;
-    padding-right: 1rem;
 }
 
-td a {
+#adminOrderTable td a {
     text-align: center;
     text-decoration: none;
+}
+
+/*ADMIN*ORDER*DETAILS**********************************************************************/
+
+#infoOrderTable {
+    margin: 3rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infoOrderTable table {
+    width: 100%; 
+    border-radius: 0.3rem;
+    border-collapse: collapse;
+}
+
+#infoOrderTable td {
+    text-align: left;
+    border: rgb(177, 177, 177) solid 3px;
+    padding: 0.2rem 1rem; 
+}
+
+#infoOrderTable th {
+    text-align: left;
+    padding: 0.3rem 1rem;
+    border: rgba(69, 186, 191, 1) solid 3px;
+}
+
+#infoOrderTable a { /*this styles the delete button*/
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    width:max-content;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0.9rem;
+    background-color: rgb(217, 217, 217);
+    text-decoration: none;
+    color: black;
+}
+
+#infoOrderTable img { /*this styles the small rubbish bin icon*/
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 /*FORM*THEME*******************************************************************************/
@@ -323,7 +405,7 @@ td a {
 
 @media only screen and (max-width: 600px) { /*makes the form less wide when the screen is lower than 600px*/
     #addThemeForm {
-        width: 100%;
+        width: 15rem;
     }
 }
 
@@ -337,6 +419,7 @@ td a {
     list-style-type:none;
     display: block;
     text-decoration: none;
+    margin-bottom: 3rem;
 }
 
 #deleteList li{
@@ -357,10 +440,22 @@ td a {
 
 #deleteList li a {
     text-decoration: none;
-
 }
 
 /*FORM*EXAMPLE*******************************************************************************/
+
+@media only screen and (max-width: 600px) { /*makes the form less wide when the screen is lower than 600px*/
+    .adminExampleContainer {
+        position: relative;
+        max-width: 8rem;
+        margin-right: 1rem;
+    }
+}
+
+#adminExampleContents {
+    width: auto;
+    margin: 1rem;
+}
 
 #adminExamples{
     display: flex;
@@ -394,6 +489,10 @@ td a {
 /* When you mouse over the container, fade in the overlay title */
 .adminExampleContainer:hover .adminExampleOverlay {
   opacity: 1;
+}
+
+#deleteIcon {
+    padding: 1rem;
 }
 
 /*FOOTER*******************************************************************************/

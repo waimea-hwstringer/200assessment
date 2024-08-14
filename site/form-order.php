@@ -72,16 +72,16 @@ $flavours = explode(',', $matches);
         
     <h1 class="formHead">Place an order</h1>
 
-    <form method="post" action="add-order.php"> 
+    <form method="post" id="orderForm" action="add-order.php"> 
 
         <label>Full Name</label>
         <input name="name" type="text" maxlength="25" required>
 
         <label>Email</label>
-        <input name="email" type="email" required>
+        <input name="email" type="email" maxlength="50" required>
 
         <label>Phone</label>
-        <input name="phone" type="text" required>
+        <input name="phone" type="text" maxlength="50" required>
 
         <label>Size & Shape</label>
         <select name="size" required>
@@ -92,7 +92,7 @@ $flavours = explode(',', $matches);
             ?>
         </select>
 
-        <label>Tiers</label>
+        <label>Tiers (1-5)</label>
         <input name="tiers" type="number" min="1" max="5" required>
 
         <label>Flavour</label>
@@ -105,7 +105,7 @@ $flavours = explode(',', $matches);
         </select>
 
         <label>Description of what you'd like</label>
-        <textarea name="note" type="text" required class="largeTextInput"></textarea>
+        <textarea name="note" type="text" maxlength="200" required class="largeTextInput"></textarea>
 
         <label>Theme</label>
         <select name="theme" required>
@@ -122,12 +122,14 @@ $flavours = explode(',', $matches);
         <label>Address</label>
         <input name="address" type="text" required>
 
-        <label class="textBelow">Delivery</label>
-        <p>We offer deliveries throughout Nelson for an additional $20 cost. After we have contacted you to confirm your order you can indicate whether or not you would like your cake to be delivered.</p>
-
+        <label>Delivery</label>
+        <p>We offer deliveries throughout Nelson for an additional $20 cost.</p>
+        <input name="delivery" type="hidden" value="no">
+        <span>I would like my order to be delivered: </span> <input name="delivery" type="checkbox" value="yes">
+        
         <input type="submit" value="submit" required>
 
     </form>
-</section> <!-- Ends the contents section -->
+</section> <!-- Ends the contents section used for media query -->
 
 <?php include 'partials/bottom.php'; ?>
