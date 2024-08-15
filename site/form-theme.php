@@ -4,7 +4,6 @@ include 'partials/topMIN.php';
 
 
 $db = connectToDB();
-consoleLog($db);
 
 //Setup a query to get all company info
 $query = 'SELECT * FROM themes';
@@ -22,8 +21,6 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-//See what we got back
-consoleLog($themes);
 ?>
 
 <section class="contents">
@@ -36,7 +33,7 @@ consoleLog($themes);
         <input name="theme" type="text" required >
 
         <label>Description</label>
-        <textarea name="description" type="text" required ></textarea>
+        <textarea name="description" required ></textarea>
 
         <input type="submit" value="submit">
 
@@ -46,20 +43,32 @@ consoleLog($themes);
         <?php
 
         echo '<h1 class="adminHead">Delete a Theme</h1>';
+            echo '<ul>';
+            foreach($themes as $theme) {
+                
+                echo '<li>';
 
-        foreach($themes as $theme) {
-            
-            echo '<li>';
+                    echo $theme['theme'];
+                    echo '<a href="delete-theme.php?id='.$theme['id'].'" class="confirmation" >';
+                    echo '<img class="deleteIcon" src="images/delete.png" alt="⌫">';
+                    echo '</a>';
 
-                echo $theme['theme'];
-                echo '<a href="delete-theme.php?id='.$theme['id'].'">';
-                echo '<img id="deleteIcon" src="images/delete.png">';
-                echo '</a>';
-
-            echo '</li>';
-        }
+                echo '</li>';
+            }
+        echo '</ul>';
     echo '</div>';
 
 echo'</section>'; ## Ends the contents section
+?>
 
-include 'partials/bottom.php'; ?>
+<script>
+    var elems = document.getElementsByClassName('confirmation');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure that you want to delete this theme?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
+
+<?php include 'partials/bottom.php'; ?>

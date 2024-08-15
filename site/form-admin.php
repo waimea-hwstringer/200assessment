@@ -20,8 +20,7 @@ include 'partials/top.php';
             <input type="submit" value="Submit">
 
         </form>
-        <section class="shortPage">
-        <?php include 'partials/bottom.php';?>
-        </section>
     </div>
 </section> <!-- Ends the contents section -->
+
+<?php include 'partials/bottom.php';?>

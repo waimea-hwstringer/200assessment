@@ -12,8 +12,8 @@
 <body>
 <header>
     <div class="logoContainer">
-        <a href='index.php'><img id="logo" src="images/logo.png"></a>
-        <a href='index.php'><img id="logoMIN" src="images/logoMIN.png"></a>
+        <a href='index.php'><img id="logo" src="images/logo.png" alt="Home"></a>
+        <a href='index.php'><img id="logoMIN" src="images/logoMIN.png" alt="Home"></a>
     </div>
     <nav>
         <a href='index.php' class="navbarHome">Home</a>

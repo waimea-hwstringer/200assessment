@@ -8,7 +8,6 @@ $bookingID = $_GET['id'] ?? '';
 
 
 $db = connectToDB();
-consoleLog($db);
 
 //Setup a query to get all booking info
 $query = 'DELETE FROM bookings WHERE id = ?';

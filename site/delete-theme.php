@@ -8,7 +8,6 @@ $themeID = $_GET['id'] ?? '';
 
 
 $db = connectToDB();
-consoleLog($db);
 
 //Setup a query to get all theme info
 $query = 'DELETE FROM themes WHERE id = ?';

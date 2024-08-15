@@ -39,19 +39,19 @@ body {
 /*INDEX*******************************************************************************/
 /*Nav bar & header---------------*/
 
-@media only screen and (max-width: 750px) { 
+@media only screen and (max-width: 460px) { 
     .navbarHome {
         display: none;
     }
 }
 
-@media only screen and (max-width: 580px) { 
+@media only screen and (max-width: 660px) { 
     #logo {
         display: none;
     }
 }
 
-@media only screen and (min-width: 580px) { 
+@media only screen and (min-width: 660px) { 
     #logoMIN {
         display: none;
     }
@@ -149,7 +149,7 @@ article {
 }
 
 #heroImage {
-    background-image: url('../images/heroimage2.png');
+    background-image: url('../images/heroimage.png');
     background-size: cover;
     margin-top: 0;
 }
@@ -410,7 +410,7 @@ form input[type="submit"]:hover {
 }
 
 
-#deleteIcon {
+.deleteIcon {
     max-height: 1.2rem;
 }
 
@@ -489,10 +489,6 @@ form input[type="submit"]:hover {
 /* When you mouse over the container, fade in the overlay title */
 .adminExampleContainer:hover .adminExampleOverlay {
   opacity: 1;
-}
-
-#deleteIcon {
-    padding: 1rem;
 }
 
 /*FOOTER*******************************************************************************/

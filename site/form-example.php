@@ -3,7 +3,6 @@ require '_functions.php';
 include 'partials/topMIN.php'; 
 
 $db = connectToDB();
-consoleLog($db);
 
 //******************************************************************************** */
 
@@ -22,9 +21,6 @@ catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
 }
-
-//See what we got back
-consoleLog($themes);
 
 //********************************************************************************** */
 
@@ -49,9 +45,6 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-//See what we got back
-consoleLog($examples);
-
 //********************************************************************************** */
 ?>
 
@@ -68,7 +61,7 @@ consoleLog($examples);
         <input name="description" type="text" required>
 
         <label>Theme</label>
-        <select name="theme" required>
+        <select name="theme">
             <?php 
                 foreach ($themes as $theme) {
                     echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
@@ -78,7 +71,7 @@ consoleLog($examples);
 
         <label>Image</label>
         <label for="file-upload" class="uploadFileButton">🡢 Open folder</label>
-        <input id="file-upload" type="file" name="image" accept="image/*" required/>
+        <input id="file-upload" type="file" name="image" accept="image/*" required>
 
         <input type="submit" value="submit">
 
@@ -92,13 +85,13 @@ consoleLog($examples);
 
             echo '<div class="adminExampleContainer">';
 
-                echo '<img src="load-image.php?id=' . $example['eid'] . '" class="adminExampleImage">';
+                echo '<img src="load-image.php?id=' . $example['eid'] . '" alt=" ' . $example['ename'].'" class="adminExampleImage">';
 
                 echo '<div class="adminExampleOverlay"> 
                     <h3>'.$example['ename'].'</h3> 
                     <p>'.$example['tname'].'</p>
-                    <a href="delete-example.php?id='.$example['eid'].'">
-                        <img id="deleteIcon" src="images/delete.png">
+                    <a href="delete-example.php?id='.$example['eid'].'" class="confirmation" >
+                        <img class="deleteIcon" src="images/delete.png" alt="⌫">
                     </a>';
                 echo '</div>';
             echo '</div>';
@@ -108,4 +101,15 @@ consoleLog($examples);
 echo '</section>';
 echo '</section>'; ## Ends the contents section 
 
-include 'partials/bottom.php'; ?>
+?>
+<script>
+    var elems = document.getElementsByClassName('confirmation');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure that you want to delete this example?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
+
+<?php include 'partials/bottom.php'; ?>

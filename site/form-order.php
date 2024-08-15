@@ -3,7 +3,6 @@ require '_functions.php';
 include 'partials/top.php'; 
 
 $db = connectToDB();
-consoleLog($db);
 
 //This is the query for finding the options in the size enum
 $query = 'SHOW COLUMNS FROM bookings LIKE "size"';
@@ -41,9 +40,6 @@ catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
 }
-
-//See what we got back
-consoleLog($themes);
 
 //************************************************************* */
 
@@ -84,7 +80,7 @@ $flavours = explode(',', $matches);
         <input name="phone" type="text" maxlength="50" required>
 
         <label>Size & Shape</label>
-        <select name="size" required>
+        <select name="size">
             <?php 
                 foreach ($sizes as $size) {
                     echo '<option value="'.$size.'">'.$size.'</option>';
@@ -96,7 +92,7 @@ $flavours = explode(',', $matches);
         <input name="tiers" type="number" min="1" max="5" required>
 
         <label>Flavour</label>
-        <select name="flavour" required>
+        <select name="flavour">
             <?php 
                 foreach ($flavours as $flavour) {
                     echo '<option value="'.$flavour.'">'.$flavour.'</option>';
@@ -105,10 +101,10 @@ $flavours = explode(',', $matches);
         </select>
 
         <label>Description of what you'd like</label>
-        <textarea name="note" type="text" maxlength="200" required class="largeTextInput"></textarea>
+        <textarea name="note" maxlength="200" required class="largeTextInput"></textarea>
 
         <label>Theme</label>
-        <select name="theme" required>
+        <select name="theme">
             <?php 
                 foreach ($themes as $theme) {
                     echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
@@ -117,7 +113,7 @@ $flavours = explode(',', $matches);
         </select>
 
         <label>Date & Time needed by</label>
-        <input name="datetime" type="datetime-local" min="<?= date('Y-m-d') ?>" required>
+        <input name="datetime" type="datetime-local" required>
 
         <label>Address</label>
         <input name="address" type="text" required>
@@ -127,7 +123,7 @@ $flavours = explode(',', $matches);
         <input name="delivery" type="hidden" value="no">
         <span>I would like my order to be delivered: </span> <input name="delivery" type="checkbox" value="yes">
         
-        <input type="submit" value="submit" required>
+        <input type="submit" value="submit">
 
     </form>
 </section> <!-- Ends the contents section used for media query -->

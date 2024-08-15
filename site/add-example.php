@@ -3,9 +3,6 @@
 require '_functions.php';
 include 'partials/top.php';
 
-consoleLog($_POST, 'POST');
-consoleLog($_FILES, 'FILES');
-
 if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file (probably too large)');
 
 // Get image data and type of uploaded file from the $_FILES super-global

@@ -3,7 +3,6 @@ require '_functions.php';
 include 'partials/top.php'; 
 
 $db = connectToDB();
-consoleLog($db);
 
 //***THEMES********************************************************************************************** */
 
@@ -22,9 +21,6 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-//See what we got back
-consoleLog($themes);
-
 //***BOOKINGS********************************************************************************************** */
 
 //Setup a query to get all company info
@@ -41,9 +37,6 @@ catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the bookings database');
 }
-
-//See what we got back
-consoleLog($bookings);
 
 echo '<section class="contents">';
 

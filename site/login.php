@@ -7,8 +7,6 @@ include 'partials/top.php';
 
 <?php
 
-consoleLog($_POST, 'POST Data');
-
 // Get form data
 $username = $_POST['username'];
 $password = $_POST['password'];

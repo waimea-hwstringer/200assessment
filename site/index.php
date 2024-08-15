@@ -3,7 +3,6 @@ require '_functions.php';
 include 'partials/top.php'; 
 
 $db = connectToDB();
-consoleLog($db);
 
 //************************************************************************************** */
 
@@ -21,9 +20,6 @@ catch (PDOException $e) {
     die('There was an error getting data from the database');
 }
 
-//See what we got back
-consoleLog($examples);
-
 //************************************************************************************** */
 
 //Setup a query to get all themes
@@ -39,9 +35,6 @@ catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
 }
-
-//See what we got back
-consoleLog($themes);
 
 //************************************************************************************** */
 
@@ -81,7 +74,7 @@ consoleLog($themes);
                         $hasExamples = true;
                         
                         $themeContent .= '<article>';
-                        $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '">';
+                        $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '" alt="cakeImage">';
                         $themeContent .= '</article>';
                     }
                 }

@@ -8,7 +8,6 @@ $exampleID = $_GET['id'] ?? '';
 
 
 $db = connectToDB();
-consoleLog($db);
 
 //Setup a query to get all task info
 $query = 'DELETE FROM examples WHERE id = ?';

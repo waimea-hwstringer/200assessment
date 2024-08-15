@@ -3,8 +3,6 @@
 require '_functions.php';
 include 'partials/top.php';
 
-consoleLog($_POST, 'POST Data');
-
 // Get form data
 $name = $_POST['name'];
 $email = $_POST['email'];

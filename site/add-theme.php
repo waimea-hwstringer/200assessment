@@ -3,8 +3,6 @@
 require '_functions.php';
 include 'partials/top.php';
 
-consoleLog($_POST, 'POST Data');
-
 // Get form data
 $theme = $_POST['theme'];
 $description = $_POST['description'];

@@ -210,6 +210,101 @@ Themes for cakes added:
 
 I will need to implement these features tomorrow.
 
+### 15/08/2024
+
+Today I worked on my code validation.
+
+I ran all of my documents through the site https://validator.w3.org/
+
+#### My CSS file had no errors to be resolved:
+
+![CSS with no errors](images/val-CSS.png)
+
+#### The index page had many errors, but most of them were along these lines:
+
+![large list of errors](images/val-index1.png)
+
+After adding alternate text for all of the images I had no errors. I did have warnings telling me that articles don;t have headers, but i will ignore this warning as the articles only contain images.
+
+![Warning for no heading](images/val-index2.png)
+
+#### Order form errors:
+![Errors for drop down](images/val-order1.png)
+
+This error is because i have a 'required' tag on a drop down menu. This is unnecessary because a value is always put in. After fixing this i ha dno errors.
+![No errors on order form](images/val-order2.png)
+
+#### Admin Login
+Admin log in page had many errors, but these were all because I had the footer include not exavtly at the bottom of the page.
+![Stray end tag errors & unclosed element errors](images/val-login1.png)
+
+After moving the footer code I had no errors.
+
+![Errors resolved](images/val-login2.png)
+
+#### Admin overview page (index-admin)
+
+This page had only one warning and no errors. It says that there is no header for the section, but I justt have the heading above the section so I won't fix this.
+
+![Section lacks heading error](images/val-admin1.png)
+
+The order page had only a warning saying that i do not need to define the type when i am writing in java script. I ihave removed this and now have no warnings.
+
+#### Edit themes page (form-theme)
+
+I got this error because I specified that a textarea was type="text" which is not needed
+![Attribute type not allowed on element textarea](images/val-theme1.png)
+
+I got this error because I reused an element with an ID. I changed this to class and it resolved the error.
+![Duplicate ID deleteIcon](images/val-theme2.png)
+
+The last error that I had was because I was using a 'li' tag outside of a 'ul'. I put in ul tags and it resolved all errors.
+![Element li not allowed as child of div in this context](images/val-theme3.png)
+
+all errors resolved
+![No errors](images/val-theme4.png)
+
+#### Edit examples page (form-example)
+
+This page has a list of many images. All of them don't have an alt tag.
+![Many images without an alt tag](images/val-example1.png)
+
+With this I have validated all of my pages that are visible by the browser.
+
+#### Here is the evidence that my site works.
+
+![The home page on desktop](images/FINALindex.png)
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
+### DATE HERE
+
+Replace this test with what you are working on
+
+Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+
 ### DATE HERE
 
 Replace this test with what you are working on

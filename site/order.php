@@ -8,7 +8,6 @@ $orderID = $_GET['id'] ?? '';
 
 
 $db = connectToDB();
-consoleLog($db);
 
 
 /********************************************************************** */
@@ -44,9 +43,6 @@ catch (PDOException $e) {
 }
 
 if ($booking == false) die("Unknown booking id :".$orderID." Please try again or contact site administrator.");
-
-consoleLog($booking);
-
 
 //********************************************************************************************************************************************* */
 
@@ -91,14 +87,26 @@ echo '<section class="contents">';
 
         echo '</table>';
 
-        echo '<a href="delete-order.php?id='.$booking['id'].'">';
+        echo '<a href="delete-order.php?id='.$booking['id'].'" class="confirmation" >';
             echo 'Delete order?';
-            echo '<img src="images/delete.png">';
+            echo '<img src="images/delete.png" alt="⌫">';
         echo '</a>';
 
     echo '</section>'; #ends infoOrderTable section
 
 echo '</section>'; #Ends contents section (for media query)
+?>
 
+<script>
+    var elems = document.getElementsByClassName('confirmation');
+    var confirmIt = function (e) {
+        if (!confirm('Are you sure?')) e.preventDefault();
+    };
+    for (var i = 0, l = elems.length; i < l; i++) {
+        elems[i].addEventListener('click', confirmIt, false);
+    }
+</script>
+
+<?php
 include 'partials/bottom.php';
 ?>
