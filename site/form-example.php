@@ -77,7 +77,7 @@ catch (PDOException $e) {
 
     </form>
 
-    <h1 class="adminHead">Delete an example</h1>
+    <h1 class="adminHead">List of examples</h1>
 
     <section id="adminExamples">
         <?php

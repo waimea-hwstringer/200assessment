@@ -42,7 +42,7 @@ catch (PDOException $e) {
     <div id="deleteList">
         <?php
 
-        echo '<h1 class="adminHead">Delete a Theme</h1>';
+        echo '<h1 class="adminHead">List of Themes</h1>';
             echo '<ul>';
             foreach($themes as $theme) {
                 
