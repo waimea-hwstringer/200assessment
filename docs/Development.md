@@ -130,17 +130,20 @@ She has given me the go ahead to start developing the actual website as she is h
 I have been developing the site.
 
 After developing the site I have found a problem with my UI design that will need to be changed.
-![Admin page that is skewed](images/DEVadmin.png)
+
+![Admin page that is very cluttered.](images/DEVadmin.png)
+
 Clearly this table looks very messy and will not fit nicely on a mobile device. Instead of displaying all of the order information in one giant table I have decided to have each order be on their own page. The table will display the name and the time, and then have a link to the page that has all of the more detailed order information.
 
 Here is the final result after I made the changes stated above:
+
 ![Admin page that is neat](images/DEVadmin2.png)
 
 ### 01/07/2024
 
 Added a delete order function
 
-Today I added a feature that allows orders to be deleted by the admin. This was really always needed but I just forgot about it when designing the site. I will need to inform my client of this change but I am sure that it will be okay.
+Today I added a feature that allows orders to be deleted by the admin. This was really always needed but I just forgot about it when designing the site. I will need to inform my client of this change but I am sure that it will be okay. The delete order button is on the page with the more detailed info about the order.
 
 ### 28/07/2024
 
@@ -151,7 +154,10 @@ Almost all of the actual functionality is finished, there were just some things 
 I showed her the delete order function 
 >"Yeah, I didn't think about that but you definitely need it. Looks good."
 
-I queried her about how the examples portion of the home page is looking because it looks a bit bad.
+I Showed her the change to the details presented on the Admin list of orders
+>"That definitely is an improvement. It would have looked so cluttered on my phone screen."
+
+I queried her about how the examples portion of the home page is looking, because I think that it looks a bit bad.
 
 >"It looked good on the simple mockup but with the real images I think it looks bad. I don't like how it has the big border and title around the images. It would be better to just have the pictures without any of the description or title cluttering it."
 
@@ -169,7 +175,7 @@ Today I did some error testing
 
 You used to be able to put in themes that had no information or description. I solved this by making them required when the form is filled out.
 
-![List of items without names](images/DEVempty-names.png)
+![List of themes some of which have no names](images/DEVempty-names.png)
 
 ### 08/08/2024
 
@@ -191,17 +197,16 @@ Today I discussed the changes with my client. Here is what I found:
 
 - Aesthetically the website was good
 - We measured all of our cake tins (we have square ones that I need to add as well)
-- We measured the sizes of the cake tins that are available
 - Pricing sections should say that prices start from $80.
 - About page was fine
 - The name of the website is Mad as Cakes
 - We changed the username to mpstringer and the password is Reading1871
-- N/A
+- She wanted a Logo that would contrast with the blue style of the site.
 - She thinks that we will need a section for tiers.
 
 Additional problems that she had:
 Certain letters need to be capitalised
-Carrot was added as an enum value for the flavour type on the bookings table
+Carrot was added as an option for the flavour on the bookings table
 Added shape of cake tin (under size enum)
 
 Themes for cakes added:
@@ -210,11 +215,30 @@ Themes for cakes added:
 
 I will need to implement these features tomorrow.
 
+### 13/08/2024
+
+Today I implemented the changes stated above and showed them to my client
+
+I made this logo in photoshop:
+
+![Logo saying 'Mad as Cakes' in red](images/logo.png)
+
+>"That looks like great. I like that the colour stands out from the rest of the site."
+
+I also added the themes 'Baby shower' & 'Anniversary' as she requested.
+
+I added tiers as an element of the order form. Cakes can now have 1-5 tiers. Additionally, I changed the size element to be called size & shape. Before, it just had Small, Medium & Large. Now it has many different values eg. '25.5cm Square' or '23cm Round'.
+
+![Input areas asking for Tiers, Size & Shape](images/tiers.png)
+
+
 ### 15/08/2024
 
 Today I worked on my code validation.
 
 I ran all of my documents through the site https://validator.w3.org/
+
+## Code Validation
 
 #### My CSS file had no errors to be resolved:
 
@@ -222,21 +246,23 @@ I ran all of my documents through the site https://validator.w3.org/
 
 #### The index page had many errors, but most of them were along these lines:
 
-![large list of errors](images/val-index1.png)
+!["Error: An [img] element must have an [alt] attribute"](images/val-index1.png)
 
-After adding alternate text for all of the images I had no errors. I did have warnings telling me that articles don;t have headers, but i will ignore this warning as the articles only contain images.
+After adding alternate text for all of the images I had no errors. I did have warnings telling me that articles don't have headers, but i will ignore this warning as the articles only contain images.
 
-![Warning for no heading](images/val-index2.png)
+!["Warning: Article lacks heading"](images/val-index2.png)
 
 #### Order form errors:
-![Errors for drop down](images/val-order1.png)
+!["Error: First child of [select] element with a [required] attribute"](images/val-order1.png)
 
 This error is because i have a 'required' tag on a drop down menu. This is unnecessary because a value is always put in. After fixing this i ha dno errors.
+
 ![No errors on order form](images/val-order2.png)
 
 #### Admin Login
 Admin log in page had many errors, but these were all because I had the footer include not exavtly at the bottom of the page.
-![Stray end tag errors & unclosed element errors](images/val-login1.png)
+
+!["Error: Stray end tag" "Error: Unclosed elements"](images/val-login1.png)
 
 After moving the footer code I had no errors.
 
@@ -244,40 +270,111 @@ After moving the footer code I had no errors.
 
 #### Admin overview page (index-admin)
 
-This page had only one warning and no errors. It says that there is no header for the section, but I justt have the heading above the section so I won't fix this.
+This page had only one warning and no errors. It says that there is no header for the section, but I just have the heading above the section so I won't fix this.
 
-![Section lacks heading error](images/val-admin1.png)
+!["Warning: Section lacks heading"](images/val-admin1.png)
 
 The order page had only a warning saying that i do not need to define the type when i am writing in java script. I ihave removed this and now have no warnings.
 
 #### Edit themes page (form-theme)
 
-I got this error because I specified that a textarea was type="text" which is not needed
-![Attribute type not allowed on element textarea](images/val-theme1.png)
+I got this error because I specified that a textarea was type="text" which is not needed.
+
+!["Error: Attribute [type] not allowed on attribute [textarea] at this point."](images/val-theme1.png)
 
 I got this error because I reused an element with an ID. I changed this to class and it resolved the error.
-![Duplicate ID deleteIcon](images/val-theme2.png)
+
+!["Error: Duplicate ID [deleteIcon]"](images/val-theme2.png)
 
 The last error that I had was because I was using a 'li' tag outside of a 'ul'. I put in ul tags and it resolved all errors.
-![Element li not allowed as child of div in this context](images/val-theme3.png)
 
-all errors resolved
+!["Error: Element li not allowed as child of div in this context"](images/val-theme3.png)
+
+After resolving these errors I had no more warnings.
+
 ![No errors](images/val-theme4.png)
 
 #### Edit examples page (form-example)
 
 This page has a list of many images. All of them don't have an alt tag.
-![Many images without an alt tag](images/val-example1.png)
+
+!["Error: An [img] element must have an [alt] attribute" x4](images/val-example1.png)
 
 With this I have validated all of my pages that are visible by the browser.
 
-#### Here is the evidence that my site works.
+## Evidence that the site works as intended
+
+An Example of the end user using the site can be seen [here.](https://mywaimeaschool-my.sharepoint.com/:v:/g/personal/hwstringer_waimea_school_nz/EYmXF34lshZJvdcUEayX0HgBCNKPyQ6wg3FkEADTtz0FzQ?e=WWfTt4&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJkMDBlNmRhYS1kM2UxLTQ2ZDAtOGUzYy0wNDJhMjQ2MDMwMTkifX0%3D )
+
+Here are some screenshots of the final site:
+
+Index/landing/home page
 
 ![The home page on desktop](images/FINALindex.png)
 
+
+Admin page after the admin has logged in.
+
+![The admin page with a list of all the orders](images/FINALadmin.png)
+
+
+Clicking on the 🛈 information icon leads to a more detailed page with all of the order info.
+
+![Detailed information about order](images/FINALorder.png)
+
+
+Same info in the database
+
+![Bookings table](images/FINALdb1.png)
+
+## The databse structures
+
+![Database structure for the bookings table](images/FINALdbBookings.png)
+
+
+Admin table and its contents
+
+![Admin table](images/FINALdbAdmin.png)
+
+![Admin table contents](images/FINALdbAdmin2.png)
+
+Examples table and its contents (More can be added using the site)
+
+![Examples table](images/FINALdbExamples.png)
+
+![Examples table contents](images/FINALdbExamples2.png)
+
+Themes table and its contents (More can be added using the site)
+
+![Themes table](images/FINALdbThemes.png)
+
+![Themes table contents](images/FINALdbThemes2.png)
+
+Database schema
+
+![Database schema](images/FINALdbSchema.png)
+
+## More screen shots of the site
+
+The themes from the database as seen in the site
+
+![Themes form](images/FINALthemesForm.png)
+
+The examples from the database as seen in the site. Hovering the cursor over the image provides more information and allows the image to be deleted.
+
+![Examples form](images/FINALexamplesForm.png)
+
+Admin Log in screen
+
+![Admin log in](images/FINALadminLogin.png)
+
+Same screen as seen from the dimensions of an IPhone 12 Pro. Notice the navbar has a smaller logo and no 'Home' option (clicking the logo leads back to the home page).
+
+![Admin log in slim](images/FINALadminLogin2.png)
+
 ### DATE HERE
 
-Replace this test with what you are working on
+Replace thiss test with what you are working on
 
 Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
 
