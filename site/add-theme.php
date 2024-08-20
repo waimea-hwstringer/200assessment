@@ -10,7 +10,7 @@ $description = $_POST['description'];
 
 $db = connectToDB();
 
-//Setup a query to insert all company info
+//Setup a query to insert all theme info
 $query = 'INSERT INTO themes
            (theme, `description`) 
            VALUES (?, ?)';
@@ -21,9 +21,10 @@ try {
     $stmt->execute([$theme, $description]);
 }
 
+//Error popup if something went wrong
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('There was an error sending data to the database');
+    die('There was an error inserting this theme to the database. Please try again later or contact site administrator.');
 }
 
 header('location: form-theme.php')

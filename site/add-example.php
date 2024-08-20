@@ -12,7 +12,7 @@ if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file
 ] = uploadedImageData($_FILES['image']);
 
 
-// Get standard form data
+// Get other form data
 $name = $_POST['name'];
 $description = $_POST['description'];
 $theme = $_POST['theme'];
@@ -32,7 +32,7 @@ try {
 
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Upload Picture', ERROR);
-    die('There was an error adding picture to the database. Please try again.');
+    die('There was an error adding picture to the database. Please try again or contact site administrator.');
 }
 
 header('location: form-example.php')

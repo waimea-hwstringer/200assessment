@@ -2,14 +2,12 @@
 require '_functions.php';
 include 'partials/topMIN.php';
 
+//Gets the example ID from the url
 $exampleID = $_GET['id'] ?? '';
-// SQL wen need to get the task info...
-// SELECT * FROM tasks WHERE id = XXX
-
 
 $db = connectToDB();
 
-//Setup a query to get all task info
+//Setup a query to delete required example
 $query = 'DELETE FROM examples WHERE id = ?';
 
 //Attempt to run the query
@@ -19,9 +17,10 @@ try {
     $task = $stmt->fetch(); //There will only be one result
 }
 
+//Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('Could not delete example.');
+    die('Could not delete example. Please try again later or contact site administrator.');
 }
 
 header('location: form-example.php')

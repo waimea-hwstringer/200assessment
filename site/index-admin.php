@@ -6,7 +6,7 @@ $db = connectToDB();
 
 //***THEMES********************************************************************************************** */
 
-//Setup a query to get all company info
+//Setup a query to get all theme info
 $query = 'SELECT * FROM themes';
 
 //Attempt to run the query
@@ -16,6 +16,7 @@ try {
     $themes = $stmt->fetchAll();
 }
 
+//error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -33,12 +34,13 @@ try {
     $bookings = $stmt->fetchAll();
 }
 
+//error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the bookings database');
 }
 
-echo '<section class="contents">';
+echo '<section class="contents">'; //contents is only used for a media query
 
 echo '<h1 class="adminHead">Admin list of Orders</h1>';
 
@@ -52,9 +54,9 @@ foreach ($themes as $theme) {
         return $booking['theme'] == $theme['id'];
     });
 
-    if (empty($themeBookings)) {
+    if (empty($themeBookings)) { //displays when there are no bookings for the specific theme
         echo '<p>No orders!</p>';
-    } else {
+    } else { //header if there are bookings for the specific theme
         echo '<table>';
         echo    '<tr>';
         echo        '<th>Name</th>';
@@ -63,7 +65,7 @@ foreach ($themes as $theme) {
         echo    '</tr>';
 
         foreach ($themeBookings as $booking) {
-            echo '<tr>';
+            echo '<tr>'; //table info if there are bookings for the specific theme
             echo     '<td>' . $booking['name']  . '</td>';
             echo     '<td class="adminDatetime">' . $booking['datetime']  . '</td>';
             echo     '<td><a href="order.php?id=' . $booking['id'] . '">ⓘ</a></td>';
@@ -73,8 +75,9 @@ foreach ($themes as $theme) {
         echo '</table>';
     }
 }
-echo '</section>';
+echo '</section>'; //ends table
 
+//Buttons at bottom of page
 echo '<section id="adminButtons">';
     echo '<a href="form-theme.php">Edit Themes</a>';
     echo '<a href="form-example.php">Edit Examples</a>';

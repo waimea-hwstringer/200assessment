@@ -18,7 +18,7 @@ $delivery = $_POST['delivery'];
 
 $db = connectToDB();
 
-//Setup a query to insert all company info
+//Setup a query to insert all order details
 $query = 'INSERT INTO bookings
            (`name`, email, phone, `size`, tiers, flavour, note, theme, `datetime`, `address`, delivery) 
            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
@@ -28,14 +28,14 @@ try {
     $stmt = $db->prepare($query);
     $stmt->execute([$name, $email, $phone, $size, $tiers, $flavour, $note, $theme, $datetime, $address, $delivery]);
 }
-
+//Error message popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('<h2>There was an error sending data to the database. Please check that all of your selections were valid.<h2>');
 }
-
 ?>
 
+<!--Display to the user that their order went through-->
 <section class="contents">
     <h1>Success!</h1>
     <p>Thank you for placing your order with <?= SITE_NAME ?>. We will contact you about the status of your order shortly.</p>

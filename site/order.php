@@ -2,17 +2,15 @@
 require '_functions.php';
 include 'partials/topMIN.php';
 
+//Gets current order (booking) ID 
 $orderID = $_GET['id'] ?? '';
-// SQL wen need to get the order info...
-// SELECT * FROM boookings WHERE id = XXX
-
 
 $db = connectToDB();
 
 
 /********************************************************************** */
 
-//Setup a query to get all company info
+//Setup a query to get bookings info & joins theme on both bookings & themes tables
 $query = 'SELECT themes.theme AS themeNAME,
                  bookings.name,
                  bookings.id,
@@ -36,7 +34,7 @@ try {
     $booking = $stmt->fetch();
 
 }
-
+//db error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -97,7 +95,8 @@ echo '<section class="contents">';
 echo '</section>'; #Ends contents section (for media query)
 ?>
 
-<script>
+<!--adds popup "are you sure?" when deleting the order -->
+<script> 
     var elems = document.getElementsByClassName('confirmation');
     var confirmIt = function (e) {
         if (!confirm('Are you sure?')) e.preventDefault();

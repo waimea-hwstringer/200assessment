@@ -4,7 +4,7 @@ include 'partials/top.php';
 
 $db = connectToDB();
 
-//This is the query for finding the options in the size enum
+//This is the query for finding the options in the size enum dropdown
 $query = 'SHOW COLUMNS FROM bookings LIKE "size"';
 try {
     $stmt = $db->prepare($query);
@@ -12,6 +12,8 @@ try {
     $column = $stmt->fetch();
 
 }
+
+//Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -36,6 +38,7 @@ try {
 
 }
 
+//Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -43,7 +46,7 @@ catch (PDOException $e) {
 
 //************************************************************* */
 
-//This is the query for finding the options in the flavour enum
+//This is the query for finding the options in the flavour enum dropdown
 $query = 'SHOW COLUMNS FROM bookings LIKE "flavour"';
 try {
     $stmt = $db->prepare($query);
@@ -64,7 +67,7 @@ $flavours = explode(',', $matches);
 
 ?>
 
-<section class="contents">
+<section class="contents"> <!-- Contents is only used for a media query -->
         
     <h1 class="formHead">Place an order</h1>
 
@@ -83,7 +86,7 @@ $flavours = explode(',', $matches);
         <select name="size">
             <?php 
                 foreach ($sizes as $size) {
-                    echo '<option value="'.$size.'">'.$size.'</option>';
+                    echo '<option value="'.$size.'">'.$size.'</option>'; //gets all size options for dropdown menu
                 }
             ?>
         </select>
@@ -95,7 +98,7 @@ $flavours = explode(',', $matches);
         <select name="flavour">
             <?php 
                 foreach ($flavours as $flavour) {
-                    echo '<option value="'.$flavour.'">'.$flavour.'</option>';
+                    echo '<option value="'.$flavour.'">'.$flavour.'</option>'; //gets all flavour options for dropdown menu
                 }
             ?>
         </select>
@@ -107,7 +110,7 @@ $flavours = explode(',', $matches);
         <select name="theme">
             <?php 
                 foreach ($themes as $theme) {
-                    echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>';
+                    echo '<option value="'.$theme['id'].'">'.$theme['theme'].'</option>'; //gets all themes for theme dropdown menu
                 }
             ?>
         </select>

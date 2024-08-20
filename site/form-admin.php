@@ -21,6 +21,6 @@ include 'partials/top.php';
 
         </form>
     </div>
-</section> <!-- Ends the contents section -->
+</section> <!-- Ends the contents section (only purpose is for the media query)-->
 
 <?php include 'partials/bottom.php';?>

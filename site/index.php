@@ -15,6 +15,7 @@ try {
     $stmt->execute();
     $examples = $stmt->fetchAll();
 }
+//error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -31,6 +32,7 @@ try {
     $stmt->execute();
     $themes = $stmt->fetchAll();
 }
+//error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -40,7 +42,7 @@ catch (PDOException $e) {
 
 ?>
 
-<section class="contents">
+<section class="contents"> <!-- only used for media query-->
     
     <div id="heroImage">
         <h1><?= SITE_NAME ?></h1>
@@ -64,7 +66,8 @@ catch (PDOException $e) {
     <section id="indexExamples">
         <?php     
 
-            foreach ($themes as $theme) {
+            //Displays the examples (images) under each theme. if there are no examples the header for the theme is not displayed
+            foreach ($themes as $theme) { 
                 $hasExamples = false;
                 $themeContent = '';
 

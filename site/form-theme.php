@@ -16,6 +16,7 @@ try {
 
 }
 
+//Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -23,7 +24,7 @@ catch (PDOException $e) {
 
 ?>
 
-<section class="contents">
+<section class="contents"> <!-- Contents is only used for a media query-->
 
     <h1 class="adminHead">Add a Theme</h1>
 
@@ -41,7 +42,7 @@ catch (PDOException $e) {
 
     <div id="deleteList">
         <?php
-
+           //List of current themes that can be deleted
         echo '<h1 class="adminHead">List of Themes</h1>';
             echo '<ul>';
             foreach($themes as $theme) {
@@ -61,6 +62,7 @@ catch (PDOException $e) {
 echo'</section>'; ## Ends the contents section
 ?>
 
+<!-- Adds "are you sure?" popup when deleting a theme-->
 <script>
     var elems = document.getElementsByClassName('confirmation');
     var confirmIt = function (e) {

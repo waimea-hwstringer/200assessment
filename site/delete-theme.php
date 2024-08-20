@@ -2,10 +2,8 @@
 require '_functions.php';
 include 'partials/topMIN.php';
 
+//Gets the theme ID from the url
 $themeID = $_GET['id'] ?? '';
-// SQL wen need to get the theme info...
-// SELECT * FROM theme WHERE id = XXX
-
 
 $db = connectToDB();
 

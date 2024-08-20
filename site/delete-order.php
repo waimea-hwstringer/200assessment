@@ -2,10 +2,8 @@
 require '_functions.php';
 include 'partials/topMIN.php';
 
+//Gets the booking ID from the url
 $bookingID = $_GET['id'] ?? '';
-// SQL wen need to get the booking info...
-// SELECT * FROM bookings WHERE id = XXX
-
 
 $db = connectToDB();
 
@@ -19,9 +17,10 @@ try {
     $booking = $stmt->fetch(); //There will only be one result
 }
 
+//Error popup if something went wrong
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
-    die('Could not delete theme. This is most likely because there are examples and/or orders that use this theme. These must be deleted before the theme can be deleted.');
+    die('Could not delete order. Please try again later or contact site administrator.');
 }
 
 header('location: index-admin.php')
