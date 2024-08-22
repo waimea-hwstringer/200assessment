@@ -4,7 +4,7 @@ include 'partials/top.php';
 
 ?>
 
-<section class="contents">
+<section class="contents"> <!-- contents section is used for a media query. Whole page contents must be in contents section. -->
     <div id="adminLogin">
         
         <h1 class="formHead">Admin log in</h1>

@@ -15,7 +15,7 @@ try {
     $stmt->execute();
     $examples = $stmt->fetchAll();
 }
-//error popup
+//db error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -42,7 +42,7 @@ catch (PDOException $e) {
 
 ?>
 
-<section class="contents"> <!-- only used for media query-->
+<section class="contents"> <!-- only used for media query. Whole page must be in contents section-->
     
     <div id="heroImage">
         <h1><?= SITE_NAME ?></h1>
@@ -68,13 +68,14 @@ catch (PDOException $e) {
 
             //Displays the examples (images) under each theme. if there are no examples the header for the theme is not displayed
             foreach ($themes as $theme) { 
-                $hasExamples = false;
+
+                $hasExamples = false; //assumes there is nothing to display by default so ' ' is displayed
                 $themeContent = '';
 
                 foreach($examples as $example) {
                     
                     if ($example['theme'] == $theme['id']) {
-                        $hasExamples = true;
+                        $hasExamples = true; //in this case, there is something to display so info is shown
                         
                         $themeContent .= '<article>';
                         $themeContent .=   '<img src="load-image.php?id=' . $example['id'] . '" alt="cakeImage">';
@@ -82,7 +83,7 @@ catch (PDOException $e) {
                     }
                 }
 
-                if ($hasExamples) {
+                if ($hasExamples) { //Displays the info that we found above
                     
                     echo '<h3>' . $theme['theme'] . ' cakes </h3>';
                     echo '<section class="indexExampleImages">';
@@ -94,7 +95,7 @@ catch (PDOException $e) {
 
         ?>
     </section>
-</section> <!-- Ends the contents section -->
+</section> <!-- Ends the contents section used for media query -->
 <?php 
 include 'partials/bottom.php'; 
 ?>

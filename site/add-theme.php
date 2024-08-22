@@ -21,7 +21,7 @@ try {
     $stmt->execute([$theme, $description]);
 }
 
-//Error popup if something went wrong
+//db Error popup if something went wrong
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error inserting this theme to the database. Please try again later or contact site administrator.');

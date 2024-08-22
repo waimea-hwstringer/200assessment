@@ -16,7 +16,7 @@ try {
 
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -24,7 +24,7 @@ catch (PDOException $e) {
 
 ?>
 
-<section class="contents"> <!-- Contents is only used for a media query-->
+<section class="contents"> <!-- Contents is only used for a media query. whole page must be in contents section-->
 
     <h1 class="adminHead">Add a Theme</h1>
 
@@ -59,7 +59,7 @@ catch (PDOException $e) {
         echo '</ul>';
     echo '</div>';
 
-echo'</section>'; ## Ends the contents section
+echo'</section>'; //Ends the contents section
 ?>
 
 <!-- Adds "are you sure?" popup when deleting a theme-->

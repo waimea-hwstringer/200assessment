@@ -30,6 +30,7 @@ try {
     $stmt->execute([$name, $description, $theme, $imageData, $imageType]);
 }
 
+//db error popup if something went wrong
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Upload Picture', ERROR);
     die('There was an error adding picture to the database. Please try again or contact site administrator.');

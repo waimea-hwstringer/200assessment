@@ -2,7 +2,7 @@
 require '_functions.php';
 include 'partials/topMIN.php';
 
-//Gets current order (booking) ID 
+//Gets current order (booking) ID from url
 $orderID = $_GET['id'] ?? '';
 
 $db = connectToDB();
@@ -34,17 +34,20 @@ try {
     $booking = $stmt->fetch();
 
 }
+
 //db error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
 }
 
-if ($booking == false) die("Unknown booking id :".$orderID." Please try again or contact site administrator.");
+// if booking from url is not in db show this error
+if ($booking == false) die("Unknown booking id :".$orderID.". This booking may have been deleted from the database. Please try again or contact site administrator.");
 
 //********************************************************************************************************************************************* */
 
-echo '<section class="contents">';
+echo '<section class="contents">'; //contents is used for a media query. Whole page should be in it
+
     echo '<section id="infoOrderTable">';
 
         echo '<h1 class="formHead" >Order Details</h1>';
@@ -90,10 +93,11 @@ echo '<section class="contents">';
             echo '<img src="images/delete.png" alt="⌫">';
         echo '</a>';
 
-    echo '</section>'; #ends infoOrderTable section
+    echo '</section>'; //ends infoOrderTable section
 
-echo '</section>'; #Ends contents section (for media query)
+echo '</section>'; //Ends contents section (for media query)
 ?>
+
 
 <!--adds popup "are you sure?" when deleting the order -->
 <script> 

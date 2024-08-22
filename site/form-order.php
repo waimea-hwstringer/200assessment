@@ -13,7 +13,7 @@ try {
 
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -27,7 +27,7 @@ $sizes = explode(',', $matches);
 
 //************************************************************* */
 
-//Setup a query to get all company info
+//Setup a query to get all themes info
 $query = 'SELECT * FROM themes';
 
 //Attempt to run the query
@@ -38,7 +38,7 @@ try {
 
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -67,7 +67,7 @@ $flavours = explode(',', $matches);
 
 ?>
 
-<section class="contents"> <!-- Contents is only used for a media query -->
+<section class="contents"> <!-- Contents is only used for a media query. Whole page must be in contents section.-->
         
     <h1 class="formHead">Place an order</h1>
 

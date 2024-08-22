@@ -17,7 +17,7 @@ try {
     $task = $stmt->fetch(); //There will only be one result
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('Could not delete example. Please try again later or contact site administrator.');

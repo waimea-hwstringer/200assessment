@@ -17,7 +17,7 @@ try {
 
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database Please try again later or contact site administrator.');
@@ -41,7 +41,7 @@ try {
 
 }
 
-//Error popup
+//db Error popup
 catch (PDOException $e) {
     consoleLog($e->getMessage(),'DB List Fetch', ERROR);
     die('There was an error getting data from the database');
@@ -50,7 +50,7 @@ catch (PDOException $e) {
 //********************************************************************************** */
 ?>
 
-<section class="contents"> <!-- Contents is used for the media query only -->
+<section class="contents"> <!-- Contents is used for the media query only. Whole page must be in contents section-->
 <section id="adminExampleContents">
     <h1 class="adminHead">Add an example</h1>
 
@@ -95,7 +95,7 @@ catch (PDOException $e) {
                     <p>'.$example['tname'].'</p>
                     <a href="delete-example.php?id='.$example['eid'].'" class="confirmation" >
                         <img class="deleteIcon" src="images/delete.png" alt="⌫">
-                    </a>'; //All info from the hover overlay 
+                    </a>'; //All info in the hover overlay 
 
                 echo '</div>'; //ends overlay div
             echo '</div>'; //ends container div
@@ -103,11 +103,11 @@ catch (PDOException $e) {
     echo '</section>';
     
 echo '</section>';
-echo '</section>'; ## Ends the contents section (only purpose is for the media query)
+echo '</section>'; // Ends the contents section (only purpose is for the media query)
 
 ?>
 
-<!-- Adds browser popup saying "are you sure?" when deleting something -->
+<!-- Adds browser popup saying "are you sure?" when deleting something from db-->
 <script>
     var elems = document.getElementsByClassName('confirmation');
     var confirmIt = function (e) {
