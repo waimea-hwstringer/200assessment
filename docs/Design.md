@@ -28,7 +28,6 @@ To help my sister deal with the growing size & capabilities of her cake business
 On my website the customers should be able to:
 - place an order for a cake
 - view past examples of cakes (ordered by theme)
-- contact my sister 
 
 On my website my sister should be able to:
 - view a list of orders that have been placed

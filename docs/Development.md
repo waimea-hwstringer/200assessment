@@ -208,6 +208,7 @@ Additional problems that she had:
 Certain letters need to be capitalised
 Carrot was added as an option for the flavour on the bookings table
 Added shape of cake tin (under size enum)
+Contact info must be added to home page
 
 Themes for cakes added:
 - Baby shower
@@ -304,13 +305,15 @@ With this I have validated all of my pages that are visible by the browser.
 
 ## Evidence that the site works as intended
 
-An Example of the end user using the site can be seen [here.](https://mywaimeaschool-my.sharepoint.com/:v:/g/personal/hwstringer_waimea_school_nz/EYmXF34lshZJvdcUEayX0HgBCNKPyQ6wg3FkEADTtz0FzQ?e=WWfTt4&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJkMDBlNmRhYS1kM2UxLTQ2ZDAtOGUzYy0wNDJhMjQ2MDMwMTkifX0%3D )
+An Example of the end user using the site can be seen [here.](https://mywaimeaschool-my.sharepoint.com/:v:/g/personal/hwstringer_waimea_school_nz/EYmXF34lshZJvdcUEayX0HgBCNKPyQ6wg3FkEADTtz0FzQ?e=WWfTt4&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJkMDBlNmRhYS1kM2UxLTQ2ZDAtOGUzYy0wNDJhMjQ2MDMwMTkifX0%3D ) (This example shows the home page before the contact section on the index page was implemented)
 
 Here are some screenshots of the final site:
 
 Index/landing/home page
 
-![The home page on desktop](images/FINALindex.png)
+![The top of the home page on desktop](images/FINALindex.png)
+
+![The bottom of the home page on desktop](images/FINALindex2.png)
 
 
 Admin page after the admin has logged in.

@@ -57,6 +57,10 @@ catch (PDOException $e) {
             <h3>Pricing</h3>
             <p>Our custom cakes are crafted with care and creativity, perfect for any occasion. Prices start from $80, ensuring you get a delicious and beautifully designed cake that suits your budget.</p>
         </div>
+        <div class="paragraph">
+            <h3>Contact us</h3>
+            <p>Have further questions that aren't answered here? Having problems with an order? Please contact us at mpstringer@madascakes.nz for any issues or queries that you may have.</p>
+        </div>
     </section>
 
     <div id="orderNow">
