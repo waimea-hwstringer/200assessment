@@ -73,11 +73,11 @@ Today I implemented the feedback that I got from my client.
 - Options to delete an example or theme
 - On the pricing section there will be a delivery fee stated (delivery only available in Nelson region)
 
-Flowchart MK 2. Now with time, date & address on bookings.
-![Flowchart MK 2. Now with time, date & address on bookings.](images/flowchartPlan2.png)
+DB Plan MK 3. Now with time, date & address on bookings.
+![DB Plan MK 3. Now with time, date & address on bookings.](images/dbPlan3.png)
 
-DB Plan MK 3. Now with delete options for example & theme.
-![DB Plan MK 3. Now with delete options for example & theme.](images/dbPlan3.png)
+Flowchart MK 2.  Now with delete options for example & theme.
+![Flowchart MK 2.  Now with delete options for example & theme.](images/flowchartPlan2.png)
 
 ### 30/05/2024
 

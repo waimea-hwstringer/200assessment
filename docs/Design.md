@@ -23,7 +23,7 @@ The level of IT knowledge that users may have will vary greatly. This means that
 
 ### Proposed Solution
 
-To help my sister deal with the growing size & capabilities of her cake business, I will produce a website that allows customers to place a custom order for a cake, and allows my sister to view an organised list of the orders that have been placed.
+To help my sister deal with the growing size & capabilities of her cake business, I will produce a website that allows customers to place a custom order for a cake, and allows my sister to view a list of the orders that have been placed.
 
 On my website the customers should be able to:
 - place an order for a cake
@@ -31,7 +31,7 @@ On my website the customers should be able to:
 
 On my website my sister should be able to:
 - view a list of orders that have been placed
-- edit the example images
+- edit the example images that are displayed
 
 Additionally the website should be
 - easy to use
@@ -84,36 +84,20 @@ I will need to make sure that the website fulfills all of the social needs for a
 
 -------------------------------------------------
 
-## User Experience
-
-### USEFUL
-
-It is important for users to find the website useful. This is because I am making this website to streamline the process of gathering and organizing orders for my sister's cake company. If the website is not efficient and useful for her to use then she will not use it.
-
-### USABLE
-
-It is important for users to find the website usable. The website must be easy to use because the clientel may have little to no experience using websites. It must be clear, concise and easy to navigate.
-
-### DESIRABLE
-
-It is important for users to find the website desirable. If the website does not look aesthetically and is not nice to use users will not want to use the website again.
-
-### USABLE
-
-It is important for users to find the website usable. The website must be easy to use because the clientel may have little to no experience using websites. It must be clear, concise and easy to navigate.
-
--------------------------------------------------
-
 ## Final System Design
 
 ### Database Structure
 
 Place a image here that shows the *final design* of your database: tables, fields and relationships.
 
+![Final design of database](images/DESdbFinal.png)
+
 ### User Interface Design
 
 Place images here that show your *final design* of your UI: layout, colours, etc.
 
+![Final design of user interface (index)](images/DESuxFinal.png)
+![Final design of order page](images/DESuxFinal2.png)
 
 -------------------------------------------------
 
@@ -123,10 +107,16 @@ Place images here that show your *final design* of your UI: layout, colours, etc
 
 Place a image here that shows the *actual database structure* that you implemented: tables, fields and relationships.
 
+![DB schema](images/DESdbActual.png)
+
 ### User Interface Design
 
 Place screenshots and notes here that show your *actual system UI* in action.
 
+![Actual design of user interface (index)](images/DESuxActual.png)
+![Actual design of user interface (order)](images/DESuxActual2.png)
+
+![Actual design of index page on desktop](images/DESindex.png)
 
 -------------------------------------------------
 
@@ -136,9 +126,27 @@ Place screenshots and notes here that show your *actual system UI* in action.
 
 Replace this text with a brief evaluation of how well you met the needs of your users. Look at what you initially wrote about who they are, what specific needs they have, etc. and discuss how well the system meets those needs.
 
+I wrote that my end users would be pretty much anybody, and this was correct. Consulting my client, I found that anyone and everyone can order a cake, and they do so for a wide variety of reasons.
+I stated that my end users may have little to no tech knowledge, so my website must be easy to use. I accomplished this goal, as my website follows common design principles like Nielson's heuristics. In order to ensure that my website was easy to use, I tested my site with several different people. Of course I gave it to my client (my sister, who is fourteen) and she had no difficulties whatsoever. I also tested it with both of my parents and my grandparents, and none of them had difficulty navigating or using the site either.
+
 ### Meeting the System Requirements
 
 Replace this text with a brief evaluation of how well you met the requirements that you defined at the start of the project, etc. Look back at the list of features / functionality you initially set and discuss how well your system has implemented each one.
+
+On my website the customers should be able to:
+- place an order for a cake
+- view past examples of cakes (ordered by theme)
+
+On my website my sister should be able to:
+- view a list of orders that have been placed
+- edit the example images that are displayed
+
+Additionally the website should be
+- easy to use
+- enjoyable to use
+- aesthetically pleasing
+
+I wrote at the start that users should be able to order a cake, and view past examples of cakes. Both of these features were implemented and are working as intended. My sister was supposed to be able to view orders that have been placed, and edit the example images on the index page. Again, both of these features are implemented and working. All evidence of this can be found in the Completed System section above. Additionally, I stated that the site should be aesthetically pleasing as well as easy and enjoyable to use. I followed colour theory to ensure that my website was aesthetically pleasing. After my parents and grandparents used the site, I asked them if they thought that the site was easy and enjoyable to use, and all of them said that it was. 
 
 ### Review of IMPLICATION NAME HERE
 
