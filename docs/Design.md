@@ -133,28 +133,43 @@ I stated that my end users may have little to no tech knowledge, so my website m
 
 Replace this text with a brief evaluation of how well you met the requirements that you defined at the start of the project, etc. Look back at the list of features / functionality you initially set and discuss how well your system has implemented each one.
 
-On my website the customers should be able to:
-- place an order for a cake
-- view past examples of cakes (ordered by theme)
-
-On my website my sister should be able to:
-- view a list of orders that have been placed
-- edit the example images that are displayed
-
-Additionally the website should be
-- easy to use
-- enjoyable to use
-- aesthetically pleasing
-
 I wrote at the start that users should be able to order a cake, and view past examples of cakes. Both of these features were implemented and are working as intended. My sister was supposed to be able to view orders that have been placed, and edit the example images on the index page. Again, both of these features are implemented and working. All evidence of this can be found in the Completed System section above. Additionally, I stated that the site should be aesthetically pleasing as well as easy and enjoyable to use. I followed colour theory to ensure that my website was aesthetically pleasing. After my parents and grandparents used the site, I asked them if they thought that the site was easy and enjoyable to use, and all of them said that it was. 
 
-### Review of IMPLICATION NAME HERE
+### Review of USABILITY
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+Usability was an element that I made sure to account for throughout the development of my project. I made sure to follow Nielson's usability heuristics to ensure that my website is universally usable. One of the heuristics that I used was 'consistency and standards'. I made sure that the design of my website was consistent throughout all of the pages on my site. All of the pages include the same navbar and footer at the bottom, and every input field is consistent with each other. Another heuristic that I addressed was 'recognition rather than recall'. This means that iconography should be used that is universally understandable. I used this heuristic when adding delete buttons, as all delete buttons have an icon of a rubbish bin. The bin icon is very simple line art, so that it cannot be confused with anything else. A third heuristic that I accounted for was 'visibility of system status'. I used this heuristic throughout the site. This can be seen on the page when a customer has placed the order, it alerts them about whether or not the order went through. As I stated at the start of the project, I said that I would test the site with a variety of different users. I did test the site with my parents, grandparents and  friends. None of them struggled to use the site, so I think it is evident that the site is easy to use.
 
-### Review of IMPLICATION NAME HERE
+![Order page. All input options look the same. (consistency)](images/DESorder.png)
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+![Delete button. A bin icon is displayed. (recognition)](images/DESdelete.png)
+
+![Order submitted page. (visibility of status)](images/DESsuccess.png)
+
+### Review of FUNCTIONALITY
+
+The functionality implication means that my website works as intended. After developing my website I can say that this is the case. I tested my website with a large demographic of people, including my grandparents, parents, friends and siblings. All of them were able to use and understand the website with ease. None of them encountered any errors when they were using the site. I worked hard to make sure that there were a myriad of error prevention protocols in place. For instance, if the user puts in an email that is not valid on the order form, they will get a popup displaying this. 
+
+![Error popup asking user to put '@' in email](images/DESemail.png)
+
+### Review of AESTHETICS
+
+The aesthetics implication was one that I followed closely throughout my project. I made sure to adhere to colour theory by picking colours that matched nicely with each other. My client wanted blue as the main colour to be used, so most of the elements and buttons are blue. For the logo, I used a pinkish red colour. This contrasts nicely with the blue colour that I have. This is because blue and red are primary colours, so they complement each other well. I used trigonal colour theory to determine this, but I didn't want to use a third colour (would have been yellow) because I felt that it made the site too inconsistent. 
+
+![Colour wheel](images/DEScolours.png)
+
+### Review of END USERs
+
+The end user implication is the specific needs that the users have from the website.
+This implication is relevant to my project because the website must appeal to the user's needs in order to be successful. I will have to ensure that I am appealing to the right demographic (that is being people who want cakes made for them).
+I will need to make sure that the website fulfills all of the requirements that the user may have. It is important to know your userbase in order to do this. I will test this by gathering feedback from users and asking them if it fulfilled all of their needs.
+
+The user demographic for my site is extremely wide/broad, that being people who want cakes baked for them (which is a lot of people!) Because of this I needed the design of my website to appeal to a wide variety of people, so it could not be too niche. I accomplished this, as the design of my site is very simple and easy to read. It allows the end users to do what they want, which is order a cake, with ease. This means that my site fills the end users' requirements. To ensure that it did, I trialed the site with a variety of different peoples and asked if they thought that it fulfilled there needs. All of them said that it did, so I have definitely accomplished this.
+
+### Review of SOCIAL
+
+The social implication is how the website affects the user personally.
+This implication is relevant to my project because the website must have a positive social impact on the users. This can be by using friendly language and being inclusive to all users.
+I will need to make sure that the website fulfills all of the social needs for a user by using clear language that should not be able to be interpreted as controversial.
 
 ### Review of IMPLICATION NAME HERE
 
