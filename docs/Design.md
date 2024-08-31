@@ -157,22 +157,17 @@ The aesthetics implication was one that I followed closely throughout my project
 
 ![Colour wheel](images/DEScolours.png)
 
-### Review of END USERs
-
-The end user implication is the specific needs that the users have from the website.
-This implication is relevant to my project because the website must appeal to the user's needs in order to be successful. I will have to ensure that I am appealing to the right demographic (that is being people who want cakes made for them).
-I will need to make sure that the website fulfills all of the requirements that the user may have. It is important to know your userbase in order to do this. I will test this by gathering feedback from users and asking them if it fulfilled all of their needs.
+### Review of END USERS
 
 The user demographic for my site is extremely wide/broad, that being people who want cakes baked for them (which is a lot of people!) Because of this I needed the design of my website to appeal to a wide variety of people, so it could not be too niche. I accomplished this, as the design of my site is very simple and easy to read. It allows the end users to do what they want, which is order a cake, with ease. This means that my site fills the end users' requirements. To ensure that it did, I trialed the site with a variety of different peoples and asked if they thought that it fulfilled there needs. All of them said that it did, so I have definitely accomplished this.
 
 ### Review of SOCIAL
 
-The social implication is how the website affects the user personally.
-This implication is relevant to my project because the website must have a positive social impact on the users. This can be by using friendly language and being inclusive to all users.
-I will need to make sure that the website fulfills all of the social needs for a user by using clear language that should not be able to be interpreted as controversial.
+The social implication was one that I addressed well. No language that could be interpreted as offensive was used, and all language is inclusive and non-discriminatory. Furthermore, the language used is clear and not ambiguous. These asepects help users of all walks of the earth feel comfortable and included whilst using the site.
 
-### Review of IMPLICATION NAME HERE
+![About section that has no offensive language](images/DESabout.png)
 
-Replace this text with brief notes showing how the implication was addressed in the final outcome. Accompany the notes with screenshots / other media to illustrate specific features.
+
+
 
 

@@ -271,6 +271,10 @@ form input[type="submit"]:hover {
     background: rgb(53, 143, 146);
 }
 
+#orderPlaced { /*Only used on add-order.php*/
+    padding: 3rem;
+}
+
 /*ADMIN*LOGIN*******************************************************************************/
 
 /*The text at the top of the admin login page is defined by the class .formHead which can be found on line 82 under the ORDER FORM scetion*/
@@ -354,14 +358,14 @@ form input[type="submit"]:hover {
 /*ADMIN*ORDER*DETAILS**********************************************************************/
 
 #infoOrderTable {
-    margin: 3rem;
+    margin: 1rem;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
 #infoOrderTable table {
-    width: 100%; 
+    width: 80%; 
     border-radius: 0.3rem;
     border-collapse: collapse;
 }

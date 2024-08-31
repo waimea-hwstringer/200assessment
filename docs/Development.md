@@ -232,6 +232,11 @@ I added tiers as an element of the order form. Cakes can now have 1-5 tiers. Add
 
 ![Input areas asking for Tiers, Size & Shape](images/tiers.png)
 
+### 14/08/2024
+
+Today I trialed my site with my end users
+
+I trialed my site today with two of my grandparents, my parents and my two sisters. I did this to test the usability and accessibility of my site. After onberving them use the site I asked if they had any difficulties or misunderstandings within the site, and unanimously no one had any issues. The fact that these people are my family may sway their opinion on my site (they may be yes-men) but I don't believe this to be the case. I watched them using the site and there didn't appear to be any misunderstandings.
 
 ### 15/08/2024
 

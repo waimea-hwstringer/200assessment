@@ -37,9 +37,11 @@ catch (PDOException $e) {
 
 <!--Display to the user that their order went through-->
 <section class="contents">
-    <h1>Success!</h1>
-    <p>Thank you for placing your order with <?= SITE_NAME ?>. We will contact you about the status of your order shortly.</p>
-    <a href="index.php">Return to home page</a>
+    <div id="orderPlaced">
+        <h1>Success!</h1>
+        <p>Thank you for placing your order with <?= SITE_NAME ?>. We will contact you about the status of your order shortly.</p>
+        <a href="index.php">Return to home page</a>
+    </div>
 </section>
 
 <?php include 'partials/bottom.php';?>
