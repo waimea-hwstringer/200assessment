@@ -21,6 +21,8 @@ Clients who want a cake to be made for them come from all walks of life. There i
 
 The level of IT knowledge that users may have will vary greatly. This means that the website must be easy to navigate & use.
 
+My sister will also be an end user as she will use the site to view the orders that have been placed.
+
 ### Proposed Solution
 
 To help my sister deal with the growing size & capabilities of her cake business, I will produce a website that allows customers to place a custom order for a cake, and allows my sister to view a list of the orders that have been placed.
@@ -88,13 +90,13 @@ I will need to make sure that the website fulfills all of the social needs for a
 
 ### Database Structure
 
-Place a image here that shows the *final design* of your database: tables, fields and relationships.
+This was my final design for the structure of my database, made in DrawSQL.
 
 ![Final design of database](images/DESdbFinal.png)
 
 ### User Interface Design
 
-Place images here that show your *final design* of your UI: layout, colours, etc.
+This was the final wireframe of my website, made in Figma.
 
 ![Final design of user interface (index)](images/DESuxFinal.png)
 ![Final design of order page](images/DESuxFinal2.png)
@@ -105,16 +107,25 @@ Place images here that show your *final design* of your UI: layout, colours, etc
 
 ### Database Structure
 
-Place a image here that shows the *actual database structure* that you implemented: tables, fields and relationships.
+The final database structure that I used. Little has been altered, some new columns such as 'image_data' & 'delivery'.
 
 ![DB schema](images/DESdbActual.png)
 
 ### User Interface Design
 
-Place screenshots and notes here that show your *actual system UI* in action.
+Index/home page
 
 ![Actual design of user interface (index)](images/DESuxActual.png)
+
+Order screen for when a customer is placing an order.
+
 ![Actual design of user interface (order)](images/DESuxActual2.png)
+
+List of orders as seen on the admin page
+
+![Alt text](images/DESuxActual3.png)
+
+Index page on desktop
 
 ![Actual design of index page on desktop](images/DESindex.png)
 
@@ -156,6 +167,8 @@ The functionality implication means that my website works as intended. After dev
 The aesthetics implication was one that I followed closely throughout my project. I made sure to adhere to colour theory by picking colours that matched nicely with each other. My client wanted blue as the main colour to be used, so most of the elements and buttons are blue. For the logo, I used a pinkish red colour. This contrasts nicely with the blue colour that I have. This is because blue and red are primary colours, so they complement each other well. I used trigonal colour theory to determine this, but I didn't want to use a third colour (would have been yellow) because I felt that it made the site too inconsistent. 
 
 ![Colour wheel](images/DEScolours.png)
+
+![Index page](images/DESindex.png)
 
 ### Review of END USERS
 

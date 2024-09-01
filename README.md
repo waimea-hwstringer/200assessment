@@ -15,7 +15,10 @@ This project is a website for my sister to help her with her cake business.
 - [Design & Review](Design.md)
 - [Development & Testing](Development.md)
 
-## Project mascot
-![coverImage](images/hardimage.png)
+## Admin account
+
+username: mpstringer
+
+password: Reading1871
 
 Harry Stringer 2024 &copy;

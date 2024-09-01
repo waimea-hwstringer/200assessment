@@ -90,8 +90,11 @@ Later, I added colour to the wireframe. The colour palette that I used was autom
 
 ![figma3colour](images/figma3colour.png)
 
-Below is the link to the realtime colour website i used to generate the colours.
-- https://www.realtimecolors.com/?colors=1d111a-f7f2f6-bf45a1-e68ed2-df58bd&fonts=Inter-Inter
+Here is the real time color page that I used to determine the new colours
+
+![Real time colours](images/realtimecolors.png)
+
+The link I used to generate the colours can be found [here.](https://www.realtimecolors.com/?colors=1d111a-f7f2f6-bf45a1-e68ed2-df58bd&fonts=Inter-Inter)
 
 ### 10/06/2024
 
@@ -109,7 +112,7 @@ I Changed the colours to be more neutral & blue as she requested
 ![figma with blue colours](images/figma4.png)
 
 Below is the link to the realtime colour website i used to generate the colours.
-- https://www.realtimecolors.com/?colors=1d111a-f7f2f6-45babf-D9D9D9-87c5c8&fonts=Inter-Inter
+The link I used to generate the colours can be found [here.](https://www.realtimecolors.com/?colors=1d111a-f7f2f6-45babf-D9D9D9-87c5c8&fonts=Inter-Inter)
 
 ### 13/06/2024
 
@@ -119,9 +122,7 @@ Yesterday I had a chat with my client to see whether or not she liked the new co
 
 >"That looks way better. I think that sould work for what I want."
 
-I asked her what kind of font she would like to use. She said that the font used in the mockups was good, so I'll just use it as it is available on google fonts. It is called inter.
-
-https://fonts.google.com/specimen/Inter
+I asked her what kind of font she would like to use. She said that the font used in the mockups was good, so I'll just use it as it is available on google fonts. It is called inter. Find it on google fonts [here.](https://fonts.google.com/specimen/Inter)
 
 She has given me the go ahead to start developing the actual website as she is happy with the design.
 
@@ -238,6 +239,8 @@ Today I trialed my site with my end users
 
 I trialed my site today with two of my grandparents, my parents and my two sisters. I did this to test the usability and accessibility of my site. After onberving them use the site I asked if they had any difficulties or misunderstandings within the site, and unanimously no one had any issues. The fact that these people are my family may sway their opinion on my site (they may be yes-men) but I don't believe this to be the case. I watched them using the site and there didn't appear to be any misunderstandings.
 
+>"It's working great, even a little old lady like me can do it!"
+
 ### 15/08/2024
 
 Today I worked on my code validation.
@@ -310,7 +313,18 @@ With this I have validated all of my pages that are visible by the browser.
 
 ## Evidence that the site works as intended
 
-An Example of the end user using the site can be seen [here.](https://mywaimeaschool-my.sharepoint.com/:v:/g/personal/hwstringer_waimea_school_nz/EYmXF34lshZJvdcUEayX0HgBCNKPyQ6wg3FkEADTtz0FzQ?e=WWfTt4&nav=eyJwbGF5YmFja09wdGlvbnMiOnt9LCJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJkMDBlNmRhYS1kM2UxLTQ2ZDAtOGUzYy0wNDJhMjQ2MDMwMTkifX0%3D ) (This example shows the home page before the contact section on the index page was implemented)
+An Example of the end user using the site can be seen [here.](https://mywaimeaschool-my.sharepoint.com/:v:/g/personal/hwstringer_waimea_school_nz/EYmXF34lshZJvdcUEayX0HgBnrclJ1VRIc11P06Y5QcKXA)
+
+the video showcases:
+- How to log in
+- Error detction if wrong username or password
+- How to place an order
+- Error detection if order form is filled out wrong
+- How to view past examples of my client's work
+- How the admin can view orders
+- How the admin can edit the examples shown on the index page
+
+All of this shows how the website is fully functional and works as intended.
 
 Here are some screenshots of the final site:
 
@@ -379,45 +393,3 @@ Admin Log in screen
 Same screen as seen from the dimensions of an IPhone 12 Pro. Notice the navbar has a smaller logo and no 'Home' option (clicking the logo leads back to the home page).
 
 ![Admin log in slim](images/FINALadminLogin2.png)
-
-### DATE HERE
-
-Replace thiss test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
-### DATE HERE
-
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
