@@ -12,8 +12,8 @@ This project is a website for my sister to help her with her cake business.
 - Provides my sister's contact details if they need to get in touch
 
 ## System Design & Testing
-- [Design & Review](Design.md)
-- [Development & Testing](Development.md)
+- [Design & Review](docs/Design.md)
+- [Development & Testing](docs/Development.md)
 
 ## Admin account
 
